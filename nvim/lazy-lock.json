@@ -1,0 +1,7 @@
+{
+  "gruvbox": { "branch": "master", "commit": "f1ecde848f0cdba877acb0c740320568252cc482" },
+  "kanagawa.nvim": { "branch": "master", "commit": "0a24e504a3a278849ad0aef31cd6dd24c73ca3db" },
+  "lazy.nvim": { "branch": "main", "commit": "2a9354c7d2368d78cbd5575a51a2af5bd8a6ad01" },
+  "nvim-treesitter": { "branch": "master", "commit": "6def3eea22c213a475fc42644cd48c924b67a03f" },
+  "vimtex": { "branch": "master", "commit": "534fd725f2475a9083b032e402c7e73b8a3fc6bb" }
+}
