@@ -117,6 +117,7 @@ output * bg $(find $wallpapers_path -type f | shuf -n 1) fill
 #
 # Workspaces:
 #
+    bindsym $mod+Alt+L exec swaylock -e -f -i $HOME/pictures/yuki_ready.png
     bindsym --locked XF86AudioMute exec --no-startup-id pamixer -t
     bindsym --locked XF86AudioRaiseVolume exec --no-startup-id pamixer -i 2
     bindsym --locked XF86AudioLowerVolume exec --no-startup-id pamixer -d 2
