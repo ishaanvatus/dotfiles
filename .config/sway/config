@@ -130,8 +130,8 @@ output * bg $(find $wallpapers_path -type f | shuf -n 1) fill
     bindsym --locked XF86MonBrightnessDown exec --no-startup-id light -U 5
     bindsym $mod+Shift+S sticky toggle
     set $ps1 Print
-    set $ps2 $mod+Print
-    set $ps3 Alt+Print
+    set $ps2 Alt+Print
+    set $ps3 $mod+Print
     set $ps4 $mod+Alt+Print
     set $psf $(xdg-user-dir PICTURES)/ps_$(date +"%Y%m%d%H%M%S").png
     bindsym $ps1 exec grim - | wl-copy
@@ -233,6 +233,13 @@ bindsym $mod+r mode "resize"
 input type:keyboard {
   xkb_layout us
   xkb_options caps:escape
+}
+input type:touchpad {
+    tap enabled
+    natural_scroll disabled
+    dwt enabled
+    accel_profile "flat" 
+    pointer_accel 0.5 
 }
 bar {
     swaybar_command waybar

@@ -6,6 +6,8 @@
 [[ $- != *i* ]] && return
 export EDITOR=nvim
 export GIT_EDITOR=nvim
+export HISTSIZE= 
+export HISTFILESIZE=
 #https://tug.org/texlive/quickinstall.html native LaTeX install
 export MANPATH=/usr/local/texlive/2023/texmf-dist/doc/man:$MANPATH 
 export INFOPATH=/usr/local/texlive/2023/texmf-dist/doc/info:$INFOPATH
