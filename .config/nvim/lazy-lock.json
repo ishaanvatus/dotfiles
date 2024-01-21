@@ -2,5 +2,6 @@
   "gruvbox": { "branch": "master", "commit": "f1ecde848f0cdba877acb0c740320568252cc482" },
   "lazy.nvim": { "branch": "main", "commit": "96584866b9c5e998cbae300594d0ccfd0c464627" },
   "nvim-treesitter": { "branch": "master", "commit": "25ddfde8d7167d7d81403d6809242439037d2b68" },
+  "vim-gas": { "branch": "master", "commit": "fb0442f37e2db49a2e7a18e21dfc87a443020c8d" },
   "vimtex": { "branch": "master", "commit": "5e6a8ff1405f0f2480c37bb10fa69ddfb1b6713f" }
 }

@@ -23,7 +23,8 @@ exec foot -s
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | dmenu | xargs swaymsg exec --
+set $menu dmenu_path | fuzzel | xargs swaymsg exec --
+#set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
 ### Output configuration
 #
@@ -31,6 +32,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 font pango:MononokiNerdFont Medium 17
 set $wallpapers_path $HOME/pictures/wallpapers
 output * bg $(find $wallpapers_path -type f | shuf -n 1) fill
+bindsym $mod+Shift+n output * bg $(find $wallpapers_path -type f | shuf -n 1) fill
 #
 # Example configuration:
 #

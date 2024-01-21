@@ -14,5 +14,6 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 	{"morhetz/gruvbox"},
 	{"lervag/vimtex"},
-	{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"}
+	{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"}, 
+    {"HealsCodes/vim-gas"}
 })
