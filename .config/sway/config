@@ -7,7 +7,7 @@
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
-set $mod Mod4
+set $mod MOD4  
 # Home row direction keys, like vim
 set $left h
 set $down j
@@ -32,7 +32,6 @@ set $menu dmenu_path | fuzzel | xargs swaymsg exec --
 font pango:MononokiNerdFont Medium 17
 set $wallpapers_path $HOME/pictures/wallpapers
 output * bg $(find $wallpapers_path -type f | shuf -n 1) fill
-bindsym $mod+Shift+n output * bg $(find $wallpapers_path -type f | shuf -n 1) fill
 #
 # Example configuration:
 #
@@ -71,6 +70,8 @@ bindsym $mod+Shift+n output * bg $(find $wallpapers_path -type f | shuf -n 1) fi
 #
 # Basics:
 #
+    bindsym $mod+Shift+W output "*" bg $(find $wallpapers_path -type f | shuf -n 1) fill
+
     # Start a terminal
     bindsym $mod+Return exec $term
 
@@ -128,8 +129,9 @@ bindsym $mod+Shift+n output * bg $(find $wallpapers_path -type f | shuf -n 1) fi
     bindsym --locked XF86AudioPlay exec --no-startup-id playerctl play-pause
     bindsym --locked XF86AudioNext exec --no-startup-id next
     bindsym --locked XF86AudioPrev exec --no-startup-id playerctl previous
-    bindsym --locked XF86MonBrightnessUp exec --no-startup-id brightnessctl s +5%
-    bindsym --locked XF86MonBrightnessDown exec --no-startup-id brightnessctl s 5%-
+    bindsym --locked XF86MonBrightnessUp exec --no-startup-id light -A 1
+    bindsym --locked XF86MonBrightnessDown exec --no-startup-id light -U 1
+    # Change wallpaper
     bindsym $mod+Shift+S sticky toggle
     set $ps1 Print
     set $ps2 Alt+Print
@@ -233,8 +235,7 @@ bindsym $mod+r mode "resize"
 #
 # Read `man 5 sway-bar` for more information about this section.
 input type:keyboard {
-  xkb_layout us
-  xkb_options caps:escape
+    xkb_options caps:escape
 }
 input type:touchpad {
     tap enabled
