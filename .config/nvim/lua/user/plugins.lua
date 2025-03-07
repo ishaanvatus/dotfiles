@@ -15,5 +15,4 @@ require("lazy").setup({
 	{"morhetz/gruvbox"},
 	{"lervag/vimtex"},
 	{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"}, 
-    {"HealsCodes/vim-gas"}
 })
