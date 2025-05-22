@@ -6,7 +6,7 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # User specific environment and startup programs
-if [[ -z $DISPLAY && $(tty) == /dev/tty1 ]]; then
-    exec startx
-fi
+# if [[ -z $DISPLAY && $(tty) == /dev/tty1 ]]; then
+#     exec startx
+# fi
 

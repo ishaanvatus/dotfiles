@@ -16,17 +16,17 @@ curl -fsSL https://repo.librewolf.net/librewolf.repo | pkexec tee /etc/yum.repos
 sudo dnf install librewolf
 # sanity check for pgp/gpg keys
 sudo dnf upgrade --refresh
-# basic setup
-mkdir desktop documents downloads music pictures videos
-xdg-user-dirs-update
-7z x Mononoki.zip -oMononoki
-mkdir ~/.local/share/fonts
-mv Mononoki ~/.local/share/fonts/
-fc-cache
-# stow stuff
-git clone https://github.com/ishaanvatus/dotfiles .dotfiles
-cd .dotfiles
-stow .
-echo "add github ssh-keys and reclone dotfiles via ssh after reboot"
+# # basic setup
+# mkdir desktop documents downloads music pictures videos
+# xdg-user-dirs-update
+# 7z x Mononoki.zip -oMononoki
+# mkdir ~/.local/share/fonts
+# mv Mononoki ~/.local/share/fonts/
+# fc-cache
+# # stow stuff
+# git clone https://github.com/ishaanvatus/dotfiles .dotfiles
+# cd .dotfiles
+# stow .
+echo "add github ssh-keys and clone dotfiles via ssh after reboot"
 sleep 5s
 reboot

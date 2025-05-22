@@ -3,7 +3,7 @@ URxvt.scrollBar_right: false
 URxvt.scrollBar_floating: false
 URxvt.scrollstyle: rxvt
 URxvt*font: xft:Mononoki Nerd Font:size=19
-URxvt.perl-ext-common: default,resize-font
+! URxvt.perl-ext-common: default,resize-font
 
 URxvt.depth: 32
 URxvt.background: rgba:0000/0000/0000/cccc
