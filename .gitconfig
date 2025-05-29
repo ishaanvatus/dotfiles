@@ -3,3 +3,5 @@
 	email = 34275616+ishaanvatus@users.noreply.github.com
 [core]
 	editor = nvim
+[init]
+	defaultBranch = main

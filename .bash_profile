@@ -10,3 +10,4 @@ fi
 #     exec startx
 # fi
 
+. "$HOME/.cargo/env"
