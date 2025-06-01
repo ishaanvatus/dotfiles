@@ -17,9 +17,8 @@ set $right semicolon
 # set $term foot
 
 # https://wiki.gentoo.org/wiki/Foot#Server_mode_configuration
-#set $term footclient
-#exec foot -s
-set $term foot
+set $term footclient
+exec foot -s
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -129,7 +128,7 @@ bindsym $mod+Shift+m output "HDMI-A-2" enable ; output "eDP-1" enable
 #
 # Workspaces:
 #
-    set $lock_image $HOME/pictures/a147d156fe2fbb7e0c86e782a03fd45bd5385429.jpg
+    set $lock_image $HOME/pictures/a147d156fe2fbb7e0c86e782a03fd45bd5385429.png
     bindsym $mod+Alt+L exec swaylock -e -f -i $lock_image
     bindsym --locked XF86AudioMute exec --no-startup-id pamixer -t
     bindsym --locked XF86AudioRaiseVolume exec --no-startup-id pamixer -i 2
@@ -255,9 +254,10 @@ input type:touchpad {
     pointer_accel 0.5 
 }
 bar {
-    swaybar_command swaybar
-    status_command i3status
+    swaybar_command waybar
     mode hide
+    position top
+    modifier $mod
 }
 bindsym $mod+b bar mode toggle
 exec --no-startup-id /usr/lib/xdg-desktop-portal-wlr -r 

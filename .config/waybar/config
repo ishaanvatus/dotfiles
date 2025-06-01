@@ -1,7 +1,10 @@
 {
-	"layer": "bottom",	
-	"position": "top",
+    "start_hidden": true,
+	"layer": "top",	
+	"position": "bottom",
     "height": 27,
+    "bar_id": "bar-0",
+    "ipc": true,
 
 
     "modules-left": ["sway/workspaces", "custom/scratch", "sway/mode", "sway/window"],

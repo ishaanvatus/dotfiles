@@ -1,0 +1,8 @@
+profile {
+	output eDP-1 disable
+	output 'BNQ BenQ GW2490T D2S0040701Q' mode 1920x1080@100Hz position 0,0
+}
+
+profile {
+	output eDP-1 enable
+}
