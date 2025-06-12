@@ -3,8 +3,16 @@ URxvt.scrollBar_right: false
 URxvt.scrollBar_floating: false
 URxvt.scrollstyle: rxvt
 URxvt*font: xft:Mononoki Nerd Font:size=19
-! URxvt.perl-ext-common: default
+URxvt.perl-ext-common: default
+! Enable Ctrl+Shift+C for copy
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 
+! Enable Ctrl+Shift+V for paste
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+
+! (Optional) Disable ISO 14755 Unicode input (prevents conflicts)
+URxvt.iso14755: false
+URxvt.iso14755_52: false
 URxvt.depth: 32
 URxvt.background: rgba:0000/0000/0000/cccc
 ! hard contrast: *background: #1d2021
