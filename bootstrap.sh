@@ -22,5 +22,5 @@ stow .
 xdg-user-dirs-update
 sudo systemctl set-default graphical.target
 sudo systemctl enable tlp
-sudo systemctl enamle sddm
+sudo systemctl enable sddm
 echo "add github ssh-keys and reclone dotfiles via ssh after rebooting"

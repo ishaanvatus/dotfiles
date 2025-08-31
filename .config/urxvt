@@ -3,7 +3,7 @@ URxvt.scrollBar_right: false
 URxvt.scrollBar_floating: false
 URxvt.scrollstyle: rxvt
 URxvt*font: xft:Mononoki Nerd Font:size=19
-URxvt.perl-ext-common: default
+URxvt.perl-ext-common: default, clipboard
 ! Enable Ctrl+Shift+C for copy
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 

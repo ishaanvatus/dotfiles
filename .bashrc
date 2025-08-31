@@ -23,5 +23,6 @@ if [ -d ~/.bashrc.d ]; then
     done
 fi
 unset rc
-clear
 . "$HOME/.cargo/env"
+clear
+fortune -s | cowsay -y
