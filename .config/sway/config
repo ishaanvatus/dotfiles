@@ -29,8 +29,9 @@ set $menu dmenu_path | fuzzel | xargs swaymsg exec --
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 font pango:MononokiNerdFont Medium 17
-set $wallpapers_path $HOME/pictures/wallpapers/
-output * bg $(find $wallpapers_path -type f | shuf -n 1) fill
+set $wallpapers_path ~/pictures/wallpapers/
+output * bg $(find -L $wallpapers_path -type f | shuf -n 1 ) fill
+
 #
 # Example configuration:
 #
@@ -137,16 +138,15 @@ bindsym $mod+Shift+m output "HDMI-A-2" enable ; output "eDP-1" enable
     bindsym --locked XF86AudioPlay exec --no-startup-id playerctl play-pause
     bindsym --locked XF86AudioNext exec --no-startup-id next
     bindsym --locked XF86AudioPrev exec --no-startup-id playerctl previous
-    bindsym --locked XF86MonBrightnessUp exec --no-startup-id light -A 5
-    bindsym --locked XF86MonBrightnessDown exec --no-startup-id light -U 5
+    bindsym --locked XF86MonBrightnessUp exec --no-startup-id brillo -A 5
+    bindsym --locked XF86MonBrightnessDown exec --no-startup-id brillo -U 5
     # Change wallpaper
     bindsym $mod+Shift+S sticky toggle
     set $ps1 Print
     set $ps2 Alt+Print
     set $ps3 $mod+Print
     set $ps4 $mod+Alt+Print
-    #set $psf $(xdg-user-dir PICTURES)/ps_$(date +"%Y%m%d%H%M%S").png
-    set $psf /home/ishaan/src/unchained/ps_$(date +"%Y%m%d%H%M%S").png
+    set $psf $(xdg-user-dir PICTURES)/screenshots/ps_$(date +"%Y%m%d%H%M%S").png
     bindsym $ps1 exec grim - | wl-copy
     bindsym $ps2 exec grim -g "$(slurp)" - | wl-copy
     bindsym $ps3 exec grim $psf
