@@ -138,8 +138,8 @@ bindsym $mod+Shift+m output "HDMI-A-2" enable ; output "eDP-1" enable
     bindsym --locked XF86AudioPlay exec --no-startup-id playerctl play-pause
     bindsym --locked XF86AudioNext exec --no-startup-id next
     bindsym --locked XF86AudioPrev exec --no-startup-id playerctl previous
-    bindsym --locked XF86MonBrightnessUp exec --no-startup-id brillo -A 5
-    bindsym --locked XF86MonBrightnessDown exec --no-startup-id brillo -U 5
+    bindsym --locked XF86MonBrightnessUp exec --no-startup-id light -A 5
+    bindsym --locked XF86MonBrightnessDown exec --no-startup-id light -U 5
     # Change wallpaper
     bindsym $mod+Shift+S sticky toggle
     set $ps1 Print
