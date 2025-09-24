@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_pipe_menu>
+  <menu id="apps-accessories-menu" label="Accessories" icon="/usr/share/icons/AdwaitaLegacy/16x16/legacy/applications-accessories.png">
+    <item label="Bulk Rename" icon="/usr/share/icons/hicolor/16x16/apps/org.xfce.thunar.png">
+      <action name="Execute">
+        <command>thunar --bulk-rename </command>
+      </action>
+    </item>
+    <item label="KeePassXC" icon="/usr/share/icons/hicolor/scalable/apps/keepassxc.svg">
+      <action name="Execute">
+        <command>keepassxc </command>
+      </action>
+    </item>
+    <item label="Neovim" icon="/usr/share/icons/hicolor/128x128/apps/nvim.png">
+      <action name="Execute">
+        <command>xterm -e nvim </command>
+      </action>
+    </item>
+  </menu>
+  <menu id="apps-education-menu" label="Education">
+    <item label="Anki" icon="/usr/local/share/pixmaps/anki.png">
+      <action name="Execute">
+        <command>anki </command>
+      </action>
+    </item>
+  </menu>
+  <menu id="apps-games-menu" label="Games" icon="/usr/share/icons/AdwaitaLegacy/16x16/legacy/applications-games.png">
+    <item label="NEEDY STREAMER OVERLOAD" icon="/home/savantshuia/.local/share/icons/hicolor/32x32/apps/steam_icon_1451940.png">
+      <action name="Execute">
+        <command>steam steam://rungameid/1451940</command>
+      </action>
+    </item>
+    <item label="Undertale" icon="/home/savantshuia/.local/share/icons/hicolor/32x32/apps/steam_icon_391540.png">
+      <action name="Execute">
+        <command>steam steam://rungameid/391540</command>
+      </action>
+    </item>
+  </menu>
+  <menu id="apps-graphics-menu" label="Graphics" icon="/usr/share/icons/AdwaitaLegacy/16x16/legacy/applications-graphics.png">
+    <item label="GNU Image Manipulation Program" icon="/usr/share/icons/hicolor/16x16/apps/gimp.png">
+      <action name="Execute">
+        <command>gimp-3.0 </command>
+      </action>
+    </item>
+    <item label="Inkscape" icon="/usr/share/icons/hicolor/16x16/apps/org.inkscape.Inkscape.png">
+      <action name="Execute">
+        <command>inkscape </command>
+      </action>
+    </item>
+    <item label="Krita" icon="/usr/share/icons/hicolor/16x16/apps/krita.png">
+      <action name="Execute">
+        <command>krita </command>
+      </action>
+    </item>
+  </menu>
+  <menu id="apps-multimedia-menu" label="Multimedia">
+    <item label="Volume Control" icon="/usr/share/icons/AdwaitaLegacy/16x16/legacy/multimedia-volume-control.png">
+      <action name="Execute">
+        <command>pavucontrol</command>
+      </action>
+    </item>
+    <item label="mpv Media Player" icon="/usr/share/icons/hicolor/16x16/apps/mpv.png">
+      <action name="Execute">
+        <command>mpv --player-operation-mode=pseudo-gui -- </command>
+      </action>
+    </item>
+  </menu>
+  <menu id="apps-network-menu" label="Network" icon="/usr/share/icons/AdwaitaLegacy/16x16/legacy/applications-internet.png">
+    <item label="Chromium Web Browser" icon="/usr/share/icons/hicolor/24x24/apps/chromium-browser.png">
+      <action name="Execute">
+        <command>/usr/bin/chromium-browser </command>
+      </action>
+    </item>
+    <item label="LibreWolf" icon="/usr/share/icons/hicolor/16x16/apps/librewolf.png">
+      <action name="Execute">
+        <command>/usr/share/librewolf/librewolf </command>
+      </action>
+    </item>
+    <item label="Remote Viewer" icon="/usr/share/icons/hicolor/16x16/apps/virt-viewer.png">
+      <action name="Execute">
+        <command>remote-viewer </command>
+      </action>
+    </item>
+    <item label="Signal" icon="/var/lib/flatpak/exports/share/icons/hicolor/16x16/apps/org.signal.Signal.png">
+      <action name="Execute">
+        <command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=signal-desktop --file-forwarding org.signal.Signal @@u </command>
+      </action>
+    </item>
+    <item label="Steam" icon="/usr/share/icons/hicolor/16x16/apps/steam.png">
+      <action name="Execute">
+        <command>/usr/bin/steam </command>
+      </action>
+    </item>
+    <item label="Zen Browser" icon="/var/lib/flatpak/exports/share/icons/hicolor/scalable/apps/app.zen_browser.zen.svg">
+      <action name="Execute">
+        <command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=launch-script.sh --file-forwarding app.zen_browser.zen @@u </command>
+      </action>
+    </item>
+    <item label="qBittorrent" icon="/usr/share/icons/hicolor/16x16/apps/qbittorrent.png">
+      <action name="Execute">
+        <command>qbittorrent </command>
+      </action>
+    </item>
+  </menu>
+  <menu id="apps-office-menu" label="Office" icon="/usr/share/icons/AdwaitaLegacy/16x16/legacy/applications-office.png">
+    <item label="LibreOffice Base" icon="/usr/share/icons/hicolor/16x16/apps/libreoffice-base.png">
+      <action name="Execute">
+        <command>libreoffice --base </command>
+      </action>
+    </item>
+    <item label="LibreOffice Calc" icon="/usr/share/icons/hicolor/16x16/apps/libreoffice-calc.png">
+      <action name="Execute">
+        <command>libreoffice --calc </command>
+      </action>
+    </item>
+    <item label="LibreOffice Draw" icon="/usr/share/icons/hicolor/16x16/apps/libreoffice-draw.png">
+      <action name="Execute">
+        <command>libreoffice --draw </command>
+      </action>
+    </item>
+    <item label="LibreOffice Impress" icon="/usr/share/icons/hicolor/16x16/apps/libreoffice-impress.png">
+      <action name="Execute">
+        <command>libreoffice --impress </command>
+      </action>
+    </item>
+    <item label="LibreOffice Math" icon="/usr/share/icons/hicolor/16x16/apps/libreoffice-math.png">
+      <action name="Execute">
+        <command>libreoffice --math </command>
+      </action>
+    </item>
+    <item label="LibreOffice Writer" icon="/usr/share/icons/hicolor/16x16/apps/libreoffice-writer.png">
+      <action name="Execute">
+        <command>libreoffice --writer </command>
+      </action>
+    </item>
+    <item label="Zathura" icon="/usr/share/icons/hicolor/16x16/apps/org.pwmt.zathura.png">
+      <action name="Execute">
+        <command>zathura </command>
+      </action>
+    </item>
+  </menu>
+  <menu id="apps-settings-menu" label="Settings" icon="/usr/share/icons/AdwaitaLegacy/16x16/legacy/preferences-desktop.png">
+    <item label="Displays">
+      <action name="Execute">
+        <command>wdisplays</command>
+      </action>
+    </item>
+    <item label="Thunar Preferences" icon="/usr/share/icons/hicolor/16x16/apps/org.xfce.thunar.png">
+      <action name="Execute">
+        <command>thunar-settings</command>
+      </action>
+    </item>
+  </menu>
+  <menu id="apps-system-menu" label="System" icon="/usr/share/icons/AdwaitaLegacy/16x16/legacy/applications-system.png">
+    <item label="Foot" icon="/usr/share/icons/hicolor/scalable/apps/foot.svg">
+      <action name="Execute">
+        <command>foot</command>
+      </action>
+    </item>
+    <item label="Foot Client" icon="/usr/share/icons/hicolor/scalable/apps/foot.svg">
+      <action name="Execute">
+        <command>footclient</command>
+      </action>
+    </item>
+    <item label="Foot Server" icon="/usr/share/icons/hicolor/scalable/apps/foot.svg">
+      <action name="Execute">
+        <command>foot --server</command>
+      </action>
+    </item>
+    <item label="Thunar File Manager" icon="/usr/share/icons/hicolor/16x16/apps/org.xfce.thunar.png">
+      <action name="Execute">
+        <command>thunar </command>
+      </action>
+    </item>
+    <item label="Virtual Machine Manager" icon="/usr/share/icons/hicolor/16x16/apps/virt-manager.png">
+      <action name="Execute">
+        <command>virt-manager</command>
+      </action>
+    </item>
+    <item label="ranger" icon="/usr/share/icons/AdwaitaLegacy/16x16/legacy/utilities-terminal.png">
+      <action name="Execute">
+        <command>xterm -e ranger</command>
+      </action>
+    </item>
+  </menu>
+</openbox_pipe_menu>
