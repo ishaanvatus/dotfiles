@@ -15,4 +15,5 @@ require("lazy").setup({
 	{"morhetz/gruvbox"},
 	{"lervag/vimtex"},
 	{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"}, 
+    {"braindead-cc/bf-vim"},
 })
