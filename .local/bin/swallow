@@ -1,0 +1,10 @@
+#!/bin/sh
+
+TREE=$(swaymsg -rt get_tree)
+PID=$(printf "%s" "$TREE" | jq 'recurse(.nodes[]) | select(.focused) | .id')
+WORKSPACE=$(printf "%s" "$TREE" | jq 'recurse(.nodes[]) | select(.type == "workspace" and (recurse(.nodes[]) | .focused)) | .name')
+
+swaymsg "[con_id=$PID] focus; move scratchpad"
+trap 'swaymsg "[con_id=$PID] focus; floating disable; move window to workspace $WORKSPACE"' EXIT
+
+"$@"
