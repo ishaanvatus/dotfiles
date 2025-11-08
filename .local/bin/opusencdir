@@ -1,0 +1,8 @@
+#!/bin/sh
+THREADS=$(nproc)
+BITRATE=160
+# the first arg $1 is the music directory which you are trying to convert
+# below command creates an identical directory structure in $(pwd)/encoded/
+find "$1" -type d -print0 | xargs -0 -P $THREADS -I{} mkdir -p "./encoded/{}"
+find "$1" -type f -iname "*.flac" -print0 | xargs -0 -P $THREADS -I{} sh -c 'out="./encoded/${1%.flac}.opus"; opusenc --bitrate $2 "$1" "$out"' _ {} $BITRATE
+find "$1" -type f -not -iname "*.flac" -print0 | xargs -0 -P $THREADS -I{} sh -c 'out="./encoded/$1"; cp "$1" "$out"' _ {}

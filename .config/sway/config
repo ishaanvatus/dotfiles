@@ -13,6 +13,11 @@ set $left j
 set $down k
 set $up l
 set $right semicolon
+# Polkit
+exec /usr/bin/lxpolkit
+exec_always wl-paste --type text --watch cliphist store
+exec_always wl-paste --type image --watch cliphist store
+bindsym $mod+y exec cliphist-fuzzel-img
 # Your preferred terminal filemanager
 set $filemanager thunar
 # Your preferred terminal emulator
@@ -145,7 +150,6 @@ bindsym $mod+Shift+m output "HDMI-A-2" enable ; output "eDP-1" enable
     bindsym --locked XF86AudioPrev exec --no-startup-id playerctl previous
     bindsym --locked XF86MonBrightnessUp exec --no-startup-id light -A 5
     bindsym --locked XF86MonBrightnessDown exec --no-startup-id light -U 5
-    # Change wallpaper
     bindsym $mod+Shift+S sticky toggle
     set $ps1 Print
     set $ps2 Alt+Print
@@ -156,7 +160,6 @@ bindsym $mod+Shift+m output "HDMI-A-2" enable ; output "eDP-1" enable
     bindsym $ps2 exec grim -g "$(slurp)" - | wl-copy
     bindsym $ps3 exec grim $psf
     bindsym $ps4 exec grim -g "$(slurp)" $psf
-
     # Switch to workspace
     bindsym $mod+1 workspace number 1
     bindsym $mod+2 workspace number 2
