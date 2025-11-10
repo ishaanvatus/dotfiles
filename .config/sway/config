@@ -36,6 +36,11 @@ set $menu dmenu_path | fuzzel | xargs swaymsg exec --
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 font pango:MononokiNerdFont Medium 17
+#gaps inner 8
+#gaps outer 3
+default_border pixel 3
+hide_edge_borders smart
+smart_borders on
 set $wallpapers_path ~/pictures/wallpapers/
 output * bg $(find -L $wallpapers_path -type f | shuf -n 1 ) fill
 
