@@ -1,6 +1,0 @@
-configuration {
- modi: "window,drun,ssh,combi";
- font: "Mononoki Nerd Font 19";
- combi-modi: "window,drun,ssh";
- }
-@theme "gruvbox-dark-hard"

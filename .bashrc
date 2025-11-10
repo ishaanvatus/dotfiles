@@ -23,4 +23,3 @@ if [ -d ~/.bashrc.d ]; then
     done
 fi
 unset rc
-fortune -s | cowsay -y
