@@ -13,6 +13,8 @@ set $left j
 set $down k
 set $up l
 set $right semicolon
+exec_always systemctl --user start sway-session.target
+exec_always systemctl --user restart kanshi.service
 # Polkit
 exec /usr/bin/lxpolkit
 exec_always wl-paste --type text --watch cliphist store
