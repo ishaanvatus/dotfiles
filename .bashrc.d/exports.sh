@@ -10,3 +10,4 @@ export PATH=/usr/local/texlive/2025/bin/x86_64-linux:$PATH
 export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOPATH/bin
+export QT_QPA_PLATFORMTHEME=qt6ct

@@ -1,3 +1,16 @@
+# List of Applications I use:
+- [strawberry](https://www.strawberrymusicplayer.org/) (music player)
+- [mpv](https://mpv.io/) and [vlc](https://www.videolan.org/vlc/) (video players)
+- [nsxiv](https://codeberg.org/nsxiv/nsxiv) (image viewer)
+- [foot](https://codeberg.org/dnkl/foot) (terminal emulator)
+- [neovim](https://neovim.io/) (text editor)
+- [sway](https://swaywm.org/) (tiling wayland compositor)
+- [thunar](https://docs.xfce.org/xfce/thunar/start) and [ranger](https://ranger.fm/) (file managers, gui and tui respectively)
+- [librewolf](https://librewolf.net/) (main browser)
+- [thorium](https://thorium.rocks/) (for things that require chromium like web bluetooth and web usb)
+- [anki](https://apps.ankiweb.net/) (flashcards)
+- [LaTeX](https://www.tug.org/texlive/quickinstall.html) ([physics and math people feel free to blame/revere him](https://lamport.azurewebsites.net/))
+- [GIMP](https://www.gimp.org/), [Krita](https://krita.org/en/) and [ImageMagick](https://imagemagick.org/) (raster manipulation wizardy)
 # Post Install 
 ## Build Applications
 - [nsxiv](https://codeberg.org/nsxiv/nsxiv)
