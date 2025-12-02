@@ -153,7 +153,7 @@ bindsym $mod+Shift+m output "HDMI-A-2" enable ; output "eDP-1" enable
     bindsym --locked XF86AudioLowerVolume exec --no-startup-id pamixer -d 2
     bindsym --locked XF86AudioPause exec --no-startup-id playerctl play-pause
     bindsym --locked XF86AudioPlay exec --no-startup-id playerctl play-pause
-    bindsym --locked XF86AudioNext exec --no-startup-id next
+    bindsym --locked XF86AudioNext exec --no-startup-id playerctl next
     bindsym --locked XF86AudioPrev exec --no-startup-id playerctl previous
     bindsym --locked XF86MonBrightnessUp exec --no-startup-id light -A 5
     bindsym --locked XF86MonBrightnessDown exec --no-startup-id light -U 5
