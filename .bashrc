@@ -24,17 +24,4 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
-# >>> juliaup initialize >>>
-
-# !! Contents within this block are managed by juliaup !!
-
-case ":$PATH:" in
-    *:/home/savantshuia/.juliaup/bin:*)
-        ;;
-
-    *)
-        export PATH=/home/savantshuia/.juliaup/bin${PATH:+:${PATH}}
-        ;;
-esac
-
-# <<< juliaup initialize <<<
+. "$HOME/.cargo/env"

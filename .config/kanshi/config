@@ -1,12 +1,10 @@
 # ~/.config/kanshi/config
 
-profile {
-  output "eDP-1" disable
-  output "HDMI-A-2" mode 1920x1080@120 position 0,0 scale 1.0
+profile thinkpad_x390 {
+    output "BOE 0x07EB Unknown" mode 1920x1080@60Hz position 0,0
 }
 
-profile {
-  output "eDP-1" mode 1920x1080@60 position 0,0 scale 1.0
-  output "HDMI-A-2" disable
+profile thinkpad_x390_with_projector {
+    output "BOE 0x07EB Unknown" disable
+    output "BNQ BenQ PJ 0x01010101" mode 1920x1080@60Hz position 0,0
 }
-

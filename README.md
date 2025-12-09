@@ -26,14 +26,23 @@ Defaults:savantshuia timestamp_type=global
 Defaults:savantshuia timestamp_timeout=5
 ```
 ## /etc/vconsole.conf 
-- cd into /usr/lib/kbd/keymaps/xkb/
-- cp us.map.gz us-remapped.map.gz
-- gunzip us-remapped.map.gz
-- edit to replace caps with escape
-- gzip back
 ```
-KEYMAP="us-remapped"
-FONT="latarcyrheb-sun32"
+cd /usr/lib/kbd/keymaps/xkb/
+cp us.map.gz us-remap.map.gz
+gunzip us-remap.map.gz
+#edit to replace caps with escape
+gzip us-remap.gz
+
+## in /etc/vconsole.conf
+KEYMAP="us-remap"
+FONT="ter-132b"
+```
+## /etc/systemd/logind.conf.d/99-laptop-server.conf
+```
+[Login]
+HandleLidSwitch=ignore
+HandleLidSwitchExternalPower=ignore
+HandleLidSwitchDocked=ignore
 ```
 ## [Rust Toolchain](https://www.rust-lang.org/tools/install)
 - Follow official instructions on the Rust website
@@ -44,4 +53,8 @@ ssh-keygen -t ed25519 -C "34275616+ishaanvatus@users.noreply.github.com"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 ```
-
+## stow aftermath
+```
+systemctl --user enable kanshi.service
+systemctl --user start sway-session.target
+```
