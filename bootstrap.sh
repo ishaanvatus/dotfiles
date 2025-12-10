@@ -20,7 +20,7 @@ sudo dnf install librewolf
 sudo dnf upgrade --refresh
 
 ## essentials
-sudo dnf install 7z blueman cowsay cups ffmpegthumbnailer foliate fortune-mod fuzzel gimp gimp-resynthesizer gnome-themes-extra grim gutenprint gutenprint-devel hplip ImageMagick imlib2-devel install install iwlwifi-mvm-firmware kanshi keepassxc libexif-devel libXft-devel light lxappearance lxpolkit lz4-devel mpv neovim NetworkManager-tui NetworkManager-wifi nmap pamixer pandoc pavucontrol perl-core playerctl protontricks python3-setuptools qbittorrent qt5ct qt6ct slurp steam stow strawberry sway terminus-fonts-console thunar thunderbird tlp torbrowser-launcher vlc waybar wayland-devel wayland-protocols-devel wdisplays xdg-user-dirs xsane zathura zathura-pdf-mupdf
+sudo dnf install 7z blueman cowsay cups ffmpegthumbnailer foliate fortune-mod fuzzel gimp gimp-resynthesizer gnome-themes-extra grim gutenprint gutenprint-devel hplip ImageMagick imlib2-devel install install iwlwifi-mvm-firmware kanshi keepassxc libexif-devel libXft-devel light lxappearance lxpolkit lz4-devel mediawriter mpv neovim NetworkManager-tui NetworkManager-wifi nmap pamixer pandoc pavucontrol perl-core playerctl protontricks python3-setuptools qbittorrent qt5ct qt6ct slurp steam stow strawberry sway terminus-fonts-console thunar thunderbird tlp torbrowser-launcher vlc waybar wayland-devel wayland-protocols-devel wdisplays xdg-user-dirs xsane zathura zathura-pdf-mupdf
 sudo dnf remove yt-dlp
 sudo dnf install @virtualization
 sudo usermod -a -G libvirt $(whoami)
