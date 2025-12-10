@@ -20,8 +20,12 @@ sudo dnf install librewolf
 sudo dnf upgrade --refresh
 
 ## essentials
-sudo dnf install 7z cowsay cups ffmpegthumbnailer fortune-mod fuzzel gimp gimp-resynthesizer gnome-themes-extra grim gutenprint gutenprint-devel hplip ImageMagick imlib2-devel install iwlwifi-mvm-firmware kanshi keepassxc libexif-devel libXft-devel light lxappearance lxpolkit mpv NetworkManager-tui NetworkManager-wifi pamixer pavucontrol perl-core playerctl python3-setuptools qbittorrent qt5ct qt6ct slurp stow strawberry sway terminus-fonts-console thunar thunderbird tlp torbrowser-launcher vlc waybar wdisplays xdg-user-dirs xsane zathura zathura-pdf-mupdf 
+sudo dnf install 7z blueman cowsay cups ffmpegthumbnailer foliate fortune-mod fuzzel gimp gimp-resynthesizer gnome-themes-extra grim gutenprint gutenprint-devel hplip ImageMagick imlib2-devel install install iwlwifi-mvm-firmware kanshi keepassxc libexif-devel libXft-devel light lxappearance lxpolkit lz4-devel mpv neovim NetworkManager-tui NetworkManager-wifi nmap pamixer pandoc pavucontrol perl-core playerctl protontricks python3-setuptools qbittorrent qt5ct qt6ct slurp steam stow strawberry sway terminus-fonts-console thunar thunderbird tlp torbrowser-launcher vlc waybar wayland-devel wayland-protocols-devel wdisplays xdg-user-dirs xsane zathura zathura-pdf-mupdf
 sudo dnf remove yt-dlp
+sudo dnf install @virtualization
+sudo usermod -a -G libvirt $(whoami)
+sudo dnf config-manager addrepo --from-repofile="https://download.docker.com/linux/fedora/docker-ce.repo"
+sudo dnf install docker-ce docker-ce-cli containerd.io
+sudo usermod -a -G docker $(whoami)
 sudo dnf upgrade --refresh
-
 mkdir ~/documents ~/downloads ~/music ~/pictures ~/videos ~/.config ~/.software ~/src
