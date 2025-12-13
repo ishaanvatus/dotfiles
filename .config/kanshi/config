@@ -13,3 +13,7 @@ profile thinkpad_x390_with_tv {
     output "BOE 0x07EB Unknown" disable
     output "Sony SONY TV  *00 0x01010101" mode 1920x1080@60Hz position 0,0 scale 1.15
 }
+profile thinkpad_x390_with_bnq {
+    output "BOE 0x07EB Unknown" disable
+    output "BNQ BenQ GW2490T D2S0040701Q" mode 1920x1080@100Hz position 0,0 
+}
