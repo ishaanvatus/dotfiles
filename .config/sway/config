@@ -15,6 +15,7 @@ set $up l
 set $right semicolon
 exec_always systemctl --user start sway-session.target
 exec_always systemctl --user restart kanshi.service
+exec xhost +si:localuser:savantshuia
 # Polkit
 exec /usr/bin/lxpolkit
 exec_always wl-paste --type text --watch cliphist store
