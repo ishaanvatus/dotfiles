@@ -20,7 +20,16 @@ sudo dnf install librewolf
 sudo dnf upgrade --refresh
 
 ## essentials
-sudo dnf install 7z blueman cowsay cups ffmpegthumbnailer foliate fortune-mod fuzzel gimp gimp-resynthesizer gnome-themes-extra grim gutenprint gutenprint-devel hplip ImageMagick imlib2-devel install install iwlwifi-mvm-firmware kanshi keepassxc libexif-devel libXft-devel light lxappearance lxpolkit lz4-devel mediawriter mpv neovim NetworkManager-tui NetworkManager-wifi nmap pamixer pandoc pavucontrol perl-core playerctl protontricks python3-setuptools qbittorrent qt5ct qt6ct slurp steam stow strawberry sway terminus-fonts-console thunar thunderbird tlp torbrowser-launcher vlc waybar wayland-devel wayland-protocols-devel wdisplays xdg-user-dirs xsane zathura zathura-pdf-mupdf
+sudo dnf install 7z blueman cowsay cups ffmpegthumbnailer foliate fortune-mod fuzzel gimp gimp-resynthesizer gnome-themes-extra grim gutenprint gutenprint-devel hplip ImageMagick imlib2-devel install install iwlwifi-mvm-firmware kanshi keepassxc libexif-devel libXft-devel light lxappearance lxpolkit lz4-devel mediawriter mpv neovim NetworkManager-tui NetworkManager-wifi nmap pamixer pandoc pavucontrol perl-core playerctl protontricks python3-setuptools qbittorrent qt5ct qt6ct slurp steam stow strawberry sway terminus-fonts-console thunar thunderbird tlp torbrowser-launcher vlc waybar wayland-devel wayland-protocols-devel wdisplays xdg-user-dirs xsane zathura zathura-pdf-mupdf chromium thunar-archive-plugin file-roller libjxl-utils gvfs-mtp gvfs-smb gstreamer1-plugins-bad-free-extras steam default-fonts-cjk
+ssh-keygen -t ed25519 -C "34275616+ishaanvatus@users.noreply.github.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+cat .ssh/id_ed25519.pub 
+rm -rf .dotfiles/
+git clone git@github.com:ishaanvatus/dotfiles.git .dotfiles
+cd .dotfiles/
+stow .
+
 sudo dnf remove yt-dlp
 sudo dnf install @virtualization
 sudo usermod -a -G libvirt $(whoami)

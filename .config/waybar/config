@@ -1,7 +1,7 @@
 {
-    "start_hidden": true,
-	"layer": "overlay",	
-	"position": "bottom",
+    "start_hidden": false,
+	"layer": "top",	
+	"top": "bottom",
     "height": 27,
     "bar_id": "bar-0",
     "ipc": true,
@@ -9,7 +9,7 @@
 
     "modules-left": ["sway/workspaces", "custom/scratch", "sway/mode", "sway/window"],
     "modules-center": [],
-    "modules-right": ["network", "temperature", "backlight", "pulseaudio", "battery", "clock", "tray"],
+    "modules-right": ["temperature", "backlight", "pulseaudio", "battery", "clock", "tray"],
 
 
 	"sway/workspaces": {
@@ -61,14 +61,6 @@
         "format-full": "   {capacity}%",
         "format-icons": ["", "", "", "", ""],
         "interval": 30
-},
-
-
-    "network": {
-        "interface": "wlp0s20f3", 
-        "format-wifi": " ",
-        "format-disconnected": "睊   Disconnected",
-        "interval": 60
 },
 
 

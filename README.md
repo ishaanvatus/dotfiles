@@ -58,3 +58,13 @@ ssh-add ~/.ssh/id_ed25519
 systemctl --user enable kanshi.service
 systemctl --user start sway-session.target
 ```
+
+## [searxng docker install](https://docs.searxng.org/admin/installation-docker.html)
+```
+mkdir -p ~/.searxng/config/ ~/.searxng/data/
+docker run --name searxng -d \
+    -p 8888:8080 --restart always \
+    -v "./config/:/etc/searxng/" \
+    -v "./data/:/var/cache/searxng/" \
+    docker.io/searxng/searxng:latest
+```

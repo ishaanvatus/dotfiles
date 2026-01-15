@@ -18,11 +18,10 @@ exec_always systemctl --user restart kanshi.service
 exec xhost +si:localuser:savantshuia
 # Polkit
 exec /usr/bin/lxpolkit
+exec nm-applet --indicator
 exec_always wl-paste --type text --watch cliphist store
 exec_always wl-paste --type image --watch cliphist store
 bindsym $mod+y exec cliphist-fuzzel-img
-# Your preferred terminal filemanager
-set $filemanager thunar
 # Your preferred terminal emulator
 # set $term foot
 
@@ -103,8 +102,8 @@ bindsym $mod+Shift+m output "HDMI-A-2" enable ; output "eDP-1" enable
     # Start your launcher
     bindsym $mod+p exec $menu
 
-    # Open file manager
-    bindsym $mod+e exec $filemanager
+    # Open emoji selector
+    bindsym $mod+e exec fuzzel-emoji
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -113,8 +112,6 @@ bindsym $mod+Shift+m output "HDMI-A-2" enable ; output "eDP-1" enable
     # mouse button for dragging.
     floating_modifier $mod normal
 
-    # Toggle waybar
-    bindsym $mod+n exec pkill -SIGUSR1 '^waybar$' 
     # Reload the configuration file
     bindsym $mod+Shift+r reload
 
@@ -197,7 +194,7 @@ bindsym $mod+Shift+m output "HDMI-A-2" enable ; output "eDP-1" enable
 # Layout stuff:
 #
     # You can "split" the current object of your focus with
-    # $mod+b or $mod+v, for horizontal and vertical splits
+    # $mod+h or $mod+v, for horizontal and vertical splits
     # respectively.
     bindsym $mod+h splith
     bindsym $mod+v splitv
@@ -271,7 +268,7 @@ input type:touchpad {
 }
 bar {
     swaybar_command waybar
-    mode hide
+    mode dock
     position top
     modifier $mod
 }
