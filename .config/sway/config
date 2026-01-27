@@ -266,6 +266,11 @@ input type:touchpad {
     accel_profile "flat" 
     pointer_accel 0.5 
 }
+input "Elan TrackPoint" {
+    accel_profile adaptive
+    pointer_accel -0.2  
+}
+
 bar {
     swaybar_command waybar
     mode dock

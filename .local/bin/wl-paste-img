@@ -1,3 +1,5 @@
 #!/bin/sh
-
-wl-paste --type image/png > "$1.png"
+epoch=$(date +%s)
+wl-paste --type image/png > "$1_$epoch.png"
+magick "$1_$epoch.png" "$1.jpg"
+rm "$1_$epoch.png"
