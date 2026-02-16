@@ -24,7 +24,9 @@ exec_always wl-paste --type image --watch cliphist store
 bindsym $mod+y exec cliphist-fuzzel-img
 # Your preferred terminal emulator
 # set $term foot
-
+# Your preferred file manager
+set $fm thunar
+bindsym $mod+e exec thunar
 # https://wiki.gentoo.org/wiki/Foot#Server_mode_configuration
 set $term footclient
 exec foot -s
@@ -102,8 +104,6 @@ bindsym $mod+Shift+m output "HDMI-A-2" enable ; output "eDP-1" enable
     # Start your launcher
     bindsym $mod+p exec $menu
 
-    # Open emoji selector
-    bindsym $mod+e exec fuzzel-emoji
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -256,9 +256,9 @@ bindsym $mod+r mode "resize"
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.kitty
-input type:keyboard {
-    xkb_options caps:escape
-}
+#input type:keyboard {
+#    xkb_options caps:escape
+#}
 input type:touchpad {
     tap enabled
     natural_scroll disabled
@@ -279,7 +279,7 @@ bar {
 }
 bindsym $mod+b bar mode toggle
 exec --no-startup-id /usr/lib/xdg-desktop-portal-wlr -r 
-set $opacity 1
+set $opacity 1.0
 for_window [class=".*"] opacity $opacity
 for_window [app_id=".*"] opacity $opacity
 include /etc/sway/config.d/*

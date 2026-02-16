@@ -15,5 +15,7 @@ require("lazy").setup({
 	{"morhetz/gruvbox"},
 	{"lervag/vimtex"},
 	{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"}, 
+    {"https://github.com/neovim/nvim-lspconfig"},
     {"RRethy/vim-hexokinase", build = "make"}
 })
+

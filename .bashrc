@@ -25,3 +25,5 @@ fi
 unset rc
 
 . "$HOME/.cargo/env"
+. "/home/savantshuia/.deno/env"
+source /home/savantshuia/.local/share/bash-completion/completions/deno.bash

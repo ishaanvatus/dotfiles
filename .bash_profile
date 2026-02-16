@@ -11,3 +11,5 @@ if [[ -z $DISPLAY && $(tty) == /dev/tty1 ]]; then
 fi
 
 . "$HOME/.cargo/env"
+. "/home/savantshuia/.deno/env"
+source /home/savantshuia/.local/share/bash-completion/completions/deno.bash
