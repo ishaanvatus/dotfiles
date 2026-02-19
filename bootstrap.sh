@@ -34,4 +34,4 @@ sudo dnf config-manager addrepo --from-repofile="https://download.docker.com/lin
 sudo dnf install docker-ce docker-ce-cli containerd.io
 sudo usermod -a -G docker $(whoami)
 sudo dnf upgrade --refresh
-mkdir -p ~/documents ~/downloads ~/music ~/pictures ~/videos ~/.config ~/.software ~/src ~/.local/bin
+mkdir -p ~/documents ~/downloads ~/music ~/pictures ~/videos ~/.config/xfce4 ~/.software ~/src ~/.local/bin 
