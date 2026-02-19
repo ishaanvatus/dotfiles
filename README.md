@@ -7,15 +7,16 @@
 - [sway](https://swaywm.org/) (tiling wayland compositor)
 - [thunar](https://docs.xfce.org/xfce/thunar/start) and [ranger](https://ranger.fm/) (file managers, gui and tui respectively)
 - [librewolf](https://librewolf.net/) (main browser)
-- [thorium](https://thorium.rocks/) (for things that require chromium like web bluetooth and web usb)
+- [chromium](https://github.com/chromium/chromium) (for things that require chromium like web bluetooth and web usb)
 - [anki](https://apps.ankiweb.net/) (flashcards)
-- [LaTeX](https://www.tug.org/texlive/quickinstall.html) ([physics and math people feel free to blame/revere him](https://lamport.azurewebsites.net/))
+- [LaTeX](https://www.latex-project.org/) ([physics and math people feel free to blame/revere him](https://lamport.azurewebsites.net/))
 - [GIMP](https://www.gimp.org/), [Krita](https://krita.org/en/) and [ImageMagick](https://imagemagick.org/) (raster manipulation wizardy)
 # Post Install 
 ## Build Applications
-- [nsxiv](https://codeberg.org/nsxiv/nsxiv)
 - [MakeMkv](https://www.makemkv.com/download/)
-- [Thorium](https://thorium.rocks/)
+- [anki](https://apps.ankiweb.net/)
+- [LaTeX](https://www.tug.org/texlive/quickinstall.html)
+- []()
 
 ## /etc/sudoers
 ```
@@ -67,4 +68,28 @@ docker run --name searxng -d \
     -v "./config/:/etc/searxng/" \
     -v "./data/:/var/cache/searxng/" \
     docker.io/searxng/searxng:latest
+```
+
+## Flatpaks
+- [Signal](https://flathub.org/en/apps/org.signal.Signal)
+- [OBS Studio](https://flathub.org/en/apps/com.obsproject.Studio)
+- [Kdenlive](https://flathub.org/en/apps/org.kde.kdenlive)
+
+## Cloudflare Warp
+```
+sudo rpm --import https://pkg.cloudflareclient.com/pubkey.gpg
+sudo tee /etc/yum.repos.d/cloudflare-warp.repo <<EOF
+[cloudflare-warp]
+name=Cloudflare WARP
+baseurl=https://pkg.cloudflareclient.com/rpm
+enabled=1
+gpgcheck=1
+gpgkey=https://pkg.cloudflareclient.com/pubkey.gpg
+EOF
+sudo dnf update
+sudo dnf install cloudflare-warp
+warp-cli registration new
+warp-cli connect
+curl https://www.cloudflare.com/cdn-cgi/trace
+warp-cli mode warp+doh
 ```

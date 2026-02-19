@@ -256,9 +256,9 @@ bindsym $mod+r mode "resize"
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.kitty
-#input type:keyboard {
-#    xkb_options caps:escape
-#}
+input type:keyboard {
+    xkb_options caps:escape
+}
 input type:touchpad {
     tap enabled
     natural_scroll disabled
