@@ -20,6 +20,10 @@ bash bootstrap.sh
 - for deno and rustup respectively.
 ## reboot now and optionally run flatpaks.sh to install flatpaks
 ### /etc/sudoers (replace "john" with your username)
+one can do something like
+```
+sudo -E visudo -f /etc/sudoers.d/timeout
+```
 ```
 # specify the timeout type (usual default=tty)
 Defaults:john timestamp_type=global
@@ -42,6 +46,9 @@ docker run --name searxng -d \
 ### Apps left to install
 - [nsxiv](https://codeberg.org/nsxiv/nsxiv)
 - [nwg-look](https://github.com/nwg-piotr/nwg-look)
+    - Dark Theme
+        - qt5ct dark theme & qt6ct dark theme: darker
+        - nwg-look dark theme: Adwaita Dark, prefer dark
 - [chafa](https://github.com/hpjansson/chafa#installing) for jxl support lf previews
 - [Anki](https://apps.ankiweb.net/#downloads), [instructions](https://docs.ankiweb.net/platform/linux/installing.html)
 - [TeX Live](https://www.tug.org/texlive/quickinstall.html)
@@ -51,34 +58,22 @@ docker run --name searxng -d \
     cd install-tl-2*
     sudo perl ./install-tl --no-interaction
     ```
-- [Strawberry Spotify Plugin](https://wiki.strawberrymusicplayer.org/wiki/Installing_GStreamer_Spotify_plugin)
 - [MakeMKV](https://forum.makemkv.com/forum/viewtopic.php?f=3&t=224), [Beta Key](https://forum.makemkv.com/forum/viewtopic.php?t=1053) 
 - [Vial](https://get.vial.today/download/) make a Vial.desktop in ~/.local/share/applications
 - [ddcui](https://github.com/rockowitz/ddcui) ddcutil frontend gui app.
 ### Optionally
-- install lpf-spotify-client from rpm fusion for spotify (flatpak may not work well with sys tray)
+- run lpf-spotify-client (already in [bootstrap script](./bootstrap.sh), from rpm fusion) for spotify (flatpak may not work well with sys tray)
 ### Librewolf
 - Extensions
     - [Vimium](https://vimium.github.io/)
     - [Dark Reader](https://github.com/darkreader/darkreader) 
-    - [TWP](https://github.com/FilipePS/Traduzir-paginas-web)
     - [TamperMonkey](https://www.tampermonkey.net/)
-- Turn off history deletion
-- Startup Behaviour
-- Download Behaviour
+- tweak settings
 
-### Dark Theme
-- qt5ct dark theme & qt6ct dark theme: darker
-- nwg-look dark theme: Adwaita Dark, prefer dark
 
-### MISC
+### libvirt
 - /etc/libvirt/network.conf: change 
     ```
     #firewall_backend = "nftables"
     firewall_backend = "iptables"
-    ```
-- neovim 
-    ```
-    cd ~/.local/share/nvim/site/pack/core/opt/vim-hexokinase
-    make hexokinase
     ```
