@@ -7,7 +7,7 @@ mkdir -p ~/desktop ~/documents ~/downloads ~/music ~/pictures/screenshots/mpv ~/
 mkdir -p ~/.local/share/fonts/Mononoki ~/.local/bin ~/.local/src ~/.local/share/applications ~/.local/share/icons ~/.config/xfce4 ~/.config/gtk-3.0
 tar xf ~/.dotfiles/Mononoki.tar.xz -C ~/.local/share/fonts/Mononoki
 
-echo "max_parallel_downloads=8" | sudo tee -a  /etc/dnf/dnf.conf
+echo "max_parallel_downloads=10" | sudo tee -a  /etc/dnf/dnf.conf
 echo "fastestmirror=True" | sudo tee -a /etc/dnf/dnf.conf
 sudo dnf -y upgrade --refresh
 
