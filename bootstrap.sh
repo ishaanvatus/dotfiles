@@ -8,7 +8,7 @@ mkdir -p ~/.local/share/fonts/Mononoki ~/.local/bin ~/.local/src ~/.local/share/
 tar xf ~/.dotfiles/Mononoki.tar.xz -C ~/.local/share/fonts/Mononoki
 
 echo "max_parallel_downloads=8" | sudo tee -a  /etc/dnf/dnf.conf
-#echo "fastestmirror=True" | sudo tee -a /etc/dnf/dnf.conf
+echo "fastestmirror=True" | sudo tee -a /etc/dnf/dnf.conf
 sudo dnf -y upgrade --refresh
 
 # Laptop stays on when closing lid
