@@ -51,13 +51,6 @@ docker run --name searxng -d \
         - nwg-look dark theme: Adwaita Dark, prefer dark
 - [chafa](https://github.com/hpjansson/chafa#installing) for jxl support lf previews
 - [Anki](https://apps.ankiweb.net/#downloads), [instructions](https://docs.ankiweb.net/platform/linux/installing.html)
-- [TeX Live](https://www.tug.org/texlive/quickinstall.html)
-    ```
-    curl -L -o install-tl-unx.tar.gz https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
-    zcat < install-tl-unx.tar.gz | tar xf -
-    cd install-tl-2*
-    sudo perl ./install-tl --no-interaction
-    ```
 - [MakeMKV](https://forum.makemkv.com/forum/viewtopic.php?f=3&t=224), [Beta Key](https://forum.makemkv.com/forum/viewtopic.php?t=1053) 
 - [Vial](https://get.vial.today/download/) make a Vial.desktop in ~/.local/share/applications
 - [ddcui](https://github.com/rockowitz/ddcui) ddcutil frontend gui app.
@@ -76,4 +69,13 @@ docker run --name searxng -d \
     ```
     #firewall_backend = "nftables"
     firewall_backend = "iptables"
+    ```
+
+### "lay-tek", or "lay-tex", pray to Knuth
+- [TeX Live](https://www.tug.org/texlive/quickinstall.html), this is last since it takes a long time, go drink tea or watch something
+    ```
+    curl -L -o install-tl-unx.tar.gz https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+    zcat < install-tl-unx.tar.gz | tar xf -
+    cd install-tl-2*
+    sudo perl ./install-tl --no-interaction
     ```
