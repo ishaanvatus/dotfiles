@@ -16,9 +16,10 @@ bash bootstrap.sh
 ## the script may ask for sudo a couple of times
 ```
 
-### run toolchains.sh
-- for deno and rustup respectively.
-## reboot now and optionally run flatpaks.sh to install flatpaks
+- toolchains.sh will run towards the end and ask for prompts, this installs rustup, deno and nvm
+    - rustup custom installation don't add to path, default profile, stable
+    - deno don't add to path or add bash completions
+    - if nvm appends some lines the last bit of .bashrc, remove them
 ### /etc/sudoers (replace "john" with your username)
 one can do something like
 ```
@@ -49,11 +50,17 @@ docker run --name searxng -d \
     - Dark Theme
         - qt5ct dark theme & qt6ct dark theme: darker
         - nwg-look dark theme: Adwaita Dark, prefer dark
+    - after setting themes in nwg-look (ensure you tick all the boxes to select the themes for flatpak too), reboot once.
+    - run flatpaks.sh in the .dotfiles dir
+    ```
+    bash flatpaks.sh
+    ```
 - [chafa](https://github.com/hpjansson/chafa#installing) for jxl support lf previews
 - [Anki](https://apps.ankiweb.net/#downloads), [instructions](https://docs.ankiweb.net/platform/linux/installing.html)
 - [MakeMKV](https://forum.makemkv.com/forum/viewtopic.php?f=3&t=224), [Beta Key](https://forum.makemkv.com/forum/viewtopic.php?t=1053) 
 - [Vial](https://get.vial.today/download/) make a Vial.desktop in ~/.local/share/applications
-- [ddcui](https://github.com/rockowitz/ddcui) ddcutil frontend gui app.
+- ~[ddcui](https://github.com/rockowitz/ddcui) ddcutil frontend gui app.~, 
+    - it's a pain since ddcutil versions may mismatch leading to dependency hell. No good alternative yet, apart from using ddcutil from the terminal.
 ### Optionally
 - run lpf-spotify-client (already in [bootstrap script](./bootstrap.sh), from rpm fusion) for spotify (flatpak may not work well with sys tray)
 ### Librewolf

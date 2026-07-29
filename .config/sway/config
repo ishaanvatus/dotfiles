@@ -167,10 +167,10 @@ output * max_render_time off
     #bindsym $ps3 exec grim $psf
     #bindsym $ps4 exec grim -g "$(slurp)" $psf
     set $psf $(xdg-user-dir PICTURES)/screenshots/ps_$(date +"%Y%m%d-%H%M%S").png
-    bindsym $ps1 exec grim - | wl-copy && notify-send -t 750 "Screenshot" "Full screen copied to clipboard" -i camera-photo
-    bindsym $ps2 exec grim -g "$(slurp)" - | wl-copy && notify-send -t 750 "Screenshot" "Selection copied to clipboard" -i camera-photo
-    bindsym $ps3 exec grim "$psf" && notify-send -t 750 "Screenshot" "Saved to $psf" -i camera-photo
-    bindsym $ps4 exec grim -g "$(slurp)" "$psf" && notify-send -t 750 "Screenshot" "Saved to $psf" -i camera-photo
+    bindsym $ps1 exec grim - | swappy -f - -o - | wl-copy
+    bindsym $ps2 exec grim -g "$(slurp)" - | swappy -f - -o - | wl-copy
+    bindsym $ps3 exec grim - | swappy -f - -o "$psf"
+    bindsym $ps4 exec grim -g "$(slurp)" - | swappy -f - -o "$psf"
     # Switch to workspace
     bindsym $mod+1 workspace number 1
     bindsym $mod+2 workspace number 2
