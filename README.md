@@ -66,7 +66,7 @@ docker run --name searxng -d \
 ### Librewolf
 - Extensions
     - [Vimium](https://vimium.github.io/)
-    - [Dark Reader](https://github.com/darkreader/darkreader) 
+    - [Dark Reader](https://darkreader.org/) 
     - [TamperMonkey](https://www.tampermonkey.net/)
 - tweak settings
 
