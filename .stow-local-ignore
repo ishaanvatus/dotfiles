@@ -1,4 +1,5 @@
-.git
+\.git
+\.gitignore
 LICENSE
 README.md
 PARTITION_SCHEME.md
