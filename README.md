@@ -58,18 +58,45 @@ docker run --name searxng -d \
 - [chafa](https://github.com/hpjansson/chafa#installing) for jxl support lf previews
 - [Anki](https://apps.ankiweb.net/#downloads), [instructions](https://docs.ankiweb.net/platform/linux/installing.html)
 - [MakeMKV](https://forum.makemkv.com/forum/viewtopic.php?f=3&t=224), [Beta Key](https://forum.makemkv.com/forum/viewtopic.php?t=1053) 
-- [Vial](https://get.vial.today/download/) make a Vial.desktop in ~/.local/share/applications
+    - Makemkv: View -> Preferences -> set "Minimum title length (seconds)" to 0 seconds
+- [Vial](https://get.vial.today/download/)
+    - put in ~/.local/bin and chmod u+x the appimage 
+    - download icon to ~/.local/share/icons/Vial.png
+    - make a Vial.desktop in ~/.local/share/applications, reference below
+    ```
+    [Desktop Entry]
+    
+    Type=Application
+    Name=Vial
+    Exec=sh -c '$HOME/.local/bin/Vial*.AppImage'
+    Icon=Vial
+    ```
 - ~[ddcui](https://github.com/rockowitz/ddcui) ddcutil frontend gui app.~, 
     - it's a pain since ddcutil versions may mismatch leading to dependency hell. No good alternative yet, apart from using ddcutil from the terminal.
+
 ### Optionally
 - run lpf-spotify-client (already in [bootstrap script](./bootstrap.sh), from rpm fusion) for spotify (flatpak may not work well with sys tray)
+- Strawberry
+    - Settings
+        - Behaviour
+            - Keep running in the background when the the windows is closed 
+            - Show the main window
+        - Collection
+            - add folder: ~/music
+            - Song fingerprinting and tracking
+            - enable EBU R 128 analysis
+        - Appearance
+            - Background image: Album Cover
+            - Position: middle
+            - Blur 10px
+    - close then reopen and do full collection rescan
 ### Librewolf
 - Extensions
     - [Vimium](https://vimium.github.io/)
     - [Dark Reader](https://darkreader.org/) 
     - [TamperMonkey](https://www.tampermonkey.net/)
 - tweak settings
-
+- [csTimer](https://github.com/ishaanvatus/cubing), [WhatsApp](https://web.whatsapp.com/)
 
 ### libvirt
 - /etc/libvirt/network.conf: change 
