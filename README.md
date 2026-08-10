@@ -94,11 +94,16 @@ docker run --name searxng -d \
             - add folder: ~/music
             - Song fingerprinting and tracking
             - enable EBU R 128 analysis
+        - Backend
+            - enable bs2b for headphones
+            - audio normalization (leave at -23 LUFS)
+            - Fading (go ham)
         - Appearance
             - Background image: Album Cover
             - Position: middle
             - Blur 10px
-    - close then reopen and do full collection rescan
+            - Stretch Image to fill, maintain aspect ratio
+    - [let first scan happen, then close then reopen and do full collection rescan](https://musicbrainz.org/release/2895c1e0-556d-47d9-a3fa-8c22fbb93607)
 - Thunar
     - enable automounting
 - Azote
