@@ -3,6 +3,15 @@
 - This scripts sets up a full [Sway](https://swaywm.org/) desktop experience configured to my personal usage, pls try it out.
 - Get the [Fedora Linux](https://fedoraproject.org/) [Everything](https://fedoraproject.org/misc/#everything) ISO (netinstaller)
 - Use the partition scheme given in [PARTITION_SCHEME.md](./PARTITION_SCHEME.md)
+- Fedora installer partition scheme
+    | Mount point |Label| Type                                          | Suggested size       |
+    |-------------|-----|-----------------------------------------------|----------------------|
+    | /boot       |boot| ext4                                          | 2 GiB                |
+    | /boot/efi   |esp| EFI system partition                          | 1 GiB                |
+    | —           |vg_<HOSTNAME>| LUKS encrypted volume group                   | Rest of device       |
+    | [SWAP]      |swap| Logical volume : Linux swap                   | RAM size + a bit more ([1.5x RAM, for hibernation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/storage_administration_guide/ch-swapspace#tb-recommended-system-swap-space)) |
+    | /           |root| Logical volume : Linux x86-64 root            | Remaining space after swap            |
+
 - Under "Software Selection"
     - Under "Base Environment" pick "Fedora Custom Operating System" 
     - Under "Add-Ons for Selected Environment" pick Standard, C Development Tools and Libraries & Development Tools
@@ -90,7 +99,11 @@ docker run --name searxng -d \
             - Position: middle
             - Blur 10px
     - close then reopen and do full collection rescan
-### Librewolf
+- Thunar
+    - enable automounting
+- Azote
+    - set wallpapers for standalone and docked (external display)
+### Librewolf 
 - Extensions
     - [Vimium](https://vimium.github.io/)
     - [Dark Reader](https://darkreader.org/) 
