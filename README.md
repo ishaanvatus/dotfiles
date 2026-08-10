@@ -8,7 +8,7 @@
     |-------------|-----|-----------------------------------------------|----------------------|
     | /boot       |boot| ext4                                          | 2 GiB                |
     | /boot/efi   |esp| EFI system partition                          | 1 GiB                |
-    | —           |vg_<HOSTNAME>| LUKS encrypted volume group                   | Rest of device       |
+    | —           |vg_HOSTNAME| LUKS encrypted volume group                   | Rest of device       |
     | [SWAP]      |swap| Logical volume : Linux swap                   | RAM size + a bit more ([1.5x RAM, for hibernation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/storage_administration_guide/ch-swapspace#tb-recommended-system-swap-space)) |
     | /           |root| Logical volume : Linux x86-64 root            | Remaining space after swap            |
 
