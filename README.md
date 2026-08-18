@@ -1,5 +1,7 @@
 # How to use this repo
 - FIRSTLY: FREE FREE TO REPORT ANY ISSUES, I'LL GET AROUND TO IT IF I CAN REPLICATE IT.
+    - ISSUES are not limited to bugs and can include bad/innefficient choices in how the bootstrap operates
+    - or the more important part I'm currently stuck with, the aftermath of boostrap is still very involved (as can be gauged by the amount of steps in this README)
 - This scripts sets up a full [Sway](https://swaywm.org/) desktop experience configured to my personal usage, pls try it out.
 - Get the [Fedora Linux](https://fedoraproject.org/) [Everything](https://fedoraproject.org/misc/#everything) ISO (netinstaller)
 - Use the partition scheme given in [PARTITION_SCHEME.md](./PARTITION_SCHEME.md)
@@ -21,6 +23,7 @@
 ```
 git clone https://github.com/ishaanvatus/dotfiles .dotfiles
 cd .dotfiles
+cd bootstrap
 bash bootstrap.sh
 ## the script may ask for sudo a couple of times
 ```
@@ -60,7 +63,7 @@ docker run --name searxng -d \
         - qt5ct dark theme & qt6ct dark theme: darker
         - nwg-look dark theme: Adwaita Dark, prefer dark
     - after setting themes in nwg-look (ensure you tick all the boxes to select the themes for flatpak too), reboot once.
-    - run flatpaks.sh in the .dotfiles dir
+    - run flatpaks.sh in the .dotfiles/bootstrap/ dir
     ```
     bash flatpaks.sh
     ```
