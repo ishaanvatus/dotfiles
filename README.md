@@ -4,7 +4,6 @@
     - or the more important part I'm currently stuck with, the aftermath of bootstrap is still very involved (as can be gauged by the amount of steps in this README)
 - This scripts sets up a full [Sway](https://swaywm.org/) desktop experience configured to my personal usage, pls try it out.
 - Get the [Fedora Linux](https://fedoraproject.org/) [Everything](https://fedoraproject.org/misc/#everything) ISO (netinstaller)
-- Use the partition scheme given in [PARTITION_SCHEME.md](./PARTITION_SCHEME.md)
 - Fedora installer partition scheme
     | Mount point |Label| Type                                          | Suggested size       |
     |-------------|-----|-----------------------------------------------|----------------------|

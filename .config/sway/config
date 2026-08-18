@@ -122,11 +122,6 @@ smart_borders on
     bindsym $ps2 exec grim -g "$(slurp)" - | wl-copy
     bindsym $ps3 exec grim $psf
     bindsym $ps4 exec grim -g "$(slurp)" $psf
-    #set $psf $(xdg-user-dir PICTURES)/screenshots/ps_$(date +"%Y%m%d-%H%M%S").png
-    #bindsym $ps1 exec grim - | swappy -f - -o - | wl-copy
-    #bindsym $ps2 exec grim -g "$(slurp)" - | swappy -f - -o - | wl-copy
-    #bindsym $ps3 exec grim - | swappy -f - -o "$psf"
-    #bindsym $ps4 exec grim -g "$(slurp)" - | swappy -f - -o "$psf"
     # Switch to workspace
     bindsym $mod+1 workspace number 1
     bindsym $mod+2 workspace number 2

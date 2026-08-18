@@ -1,7 +1,6 @@
 {
     "start_hidden": false,
 	"layer": "top",	
-	"top": "bottom",
     "height": 27,
     "bar_id": "bar-0",
     "ipc": true,
