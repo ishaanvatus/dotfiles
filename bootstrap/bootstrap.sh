@@ -31,7 +31,7 @@ echo "KERNEL==\"hidraw*\", SUBSYSTEM==\"hidraw\", ATTRS{serial}==\"*vial:f64c2b3
 
 sudo dnf -y install stow
 rm -f $HOME/.bashrc $HOME/.bash_profile
-stow .
+stow -d "$HOME/.dotfiles" -t "$HOME" .
 source $HOME/.bashrc || true
 
 
