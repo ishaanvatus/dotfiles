@@ -1,7 +1,7 @@
 # How to use this repo
 - FIRSTLY: FREE FREE TO REPORT ANY ISSUES, I'LL GET AROUND TO IT IF I CAN REPLICATE IT.
-    - ISSUES are not limited to bugs and can include bad/innefficient choices in how the bootstrap operates
-    - or the more important part I'm currently stuck with, the aftermath of boostrap is still very involved (as can be gauged by the amount of steps in this README)
+    - ISSUES are not limited to bugs and can include bad/inefficient choices regarding how the bootstrap operates
+    - or the more important part I'm currently stuck with, the aftermath of bootstrap is still very involved (as can be gauged by the amount of steps in this README)
 - This scripts sets up a full [Sway](https://swaywm.org/) desktop experience configured to my personal usage, pls try it out.
 - Get the [Fedora Linux](https://fedoraproject.org/) [Everything](https://fedoraproject.org/misc/#everything) ISO (netinstaller)
 - Use the partition scheme given in [PARTITION_SCHEME.md](./PARTITION_SCHEME.md)
@@ -18,7 +18,7 @@
     - Under "Base Environment" pick "Fedora Custom Operating System" 
     - Under "Add-Ons for Selected Environment" pick Standard, C Development Tools and Libraries & Development Tools
 - [Disable root](https://wiki.archlinux.org/title/Sudo#Disable_root_login)
-- Finish the rest of the steps in the installer and boot into your system, you will mostly likely need ethernet or usb-tethering
+- Finish the rest of the steps in the installer and boot into your system, you will mostly likely need Ethernet or usb-tethering
 - The wifi drivers included are iwlwifi-mvm-firmware, graphics drivers for intel integrated, adapt the PKGS in bootstrap.sh
 ```
 git clone https://github.com/ishaanvatus/dotfiles .dotfiles
@@ -106,7 +106,7 @@ docker run --name searxng -d \
             - Position: middle
             - Blur 10px
             - Stretch Image to fill, maintain aspect ratio
-    - [let first scan happen, then close then reopen and do full collection rescan](https://musicbrainz.org/release/2895c1e0-556d-47d9-a3fa-8c22fbb93607)
+    - [let first scan happen, close then reopen and do full collection rescan](https://musicbrainz.org/release/2895c1e0-556d-47d9-a3fa-8c22fbb93607)
 - Thunar
     - enable automounting
 - Azote
