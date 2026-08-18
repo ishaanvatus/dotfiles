@@ -22,7 +22,6 @@
 ```
 git clone https://github.com/ishaanvatus/dotfiles .dotfiles
 cd .dotfiles
-cd bootstrap
 bash bootstrap.sh
 ## the script may ask for sudo a couple of times
 ```
@@ -62,7 +61,7 @@ docker run --name searxng -d \
         - qt5ct dark theme & qt6ct dark theme: darker
         - nwg-look dark theme: Adwaita Dark, prefer dark
     - after setting themes in nwg-look (ensure you tick all the boxes to select the themes for flatpak too), reboot once.
-    - run flatpaks.sh in the .dotfiles/bootstrap/ dir
+    - run flatpaks.sh in the .dotfiles dir
     ```
     bash flatpaks.sh
     ```

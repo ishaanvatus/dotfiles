@@ -6,10 +6,10 @@ PKGS="nvim 7z adw-gtk3-theme adwaita-icon-theme aria2 azote blender blueman btop
 mkdir -p ~/desktop ~/documents ~/downloads ~/music ~/pictures/screenshots/mpv ~/public ~/templates ~/videos/recordings ~/src ~/.themes
 mkdir -p ~/.local/bin ~/.local/src ~/.local/share/applications ~/.local/share/icons  ~/.local/share/fonts
 mkdir -p ~/.config/xfce4
-tar xf ~/.dotfiles/fonts/Mononoki.tar.xz -C ~/.local/share/fonts/
-tar xf ~/.dotfiles/fonts/Rosario.tar.xz -C ~/.local/share/fonts/
-tar xf ~/.dotfiles/img/wallpapers.tar.xz -C ~/pictures/
-tar xf ~/.dotfiles/img/lock_image.tar.xz -C ~/pictures/
+tar xf ~/.dotfiles/Mononoki.tar.xz -C ~/.local/share/fonts/
+tar xf ~/.dotfiles/Rosario.tar.xz -C ~/.local/share/fonts/
+tar xf ~/.dotfiles/wallpapers.tar.xz -C ~/pictures/
+tar xf ~/.dotfiles/lock_image.tar.xz -C ~/pictures/
 
 sudo dnf config-manager setopt max_parallel_downloads=8 fastestmirror=True
 sudo dnf -y upgrade --refresh
@@ -31,7 +31,7 @@ echo "KERNEL==\"hidraw*\", SUBSYSTEM==\"hidraw\", ATTRS{serial}==\"*vial:f64c2b3
 
 sudo dnf -y install stow
 rm -f $HOME/.bashrc $HOME/.bash_profile
-stow -d "$HOME/.dotfiles" -t "$HOME" .
+stow .
 source $HOME/.bashrc || true
 
 
@@ -87,4 +87,4 @@ sudo grubby --update-kernel=ALL --args="rhgb quiet"
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 sudo plymouth-set-default-theme spinfinity
 sudo dracut --force 
-bash ~/.dotfiles/bootstrap/toolchains.sh
+bash ~/.dotfiles/toolchains.sh

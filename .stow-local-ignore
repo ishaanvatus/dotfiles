@@ -1,7 +1,11 @@
 \.git
 \.gitignore
+bootstrap.sh
+flatpaks.sh
 LICENSE
+lock_image.tar.xz
+Mononoki.tar.xz
 README.md
-bootstrap/
-fonts/
-img/
+Rosario.tar.xz
+toolchains.sh
+wallpapers.tar.xz
