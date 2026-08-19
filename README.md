@@ -42,30 +42,24 @@ Defaults:john timestamp_type=global
 # specify the timeout interval (usual default=15)
 Defaults:john timestamp_timeout=5
 ```
+### run build.sh (in ~/.dotfiles)
+```
+bash build.sh 
+```
 ### [searxng docker install](https://docs.searxng.org/admin/installation-docker.html)
+- set browser engine to http://localhost:8888/search?q=%s, shortcut to @sxng and name to SearXNG
+- Dark Theme
+    - qt5ct dark theme & qt6ct dark theme: darker
+    - nwg-look dark theme: Adwaita Dark, prefer dark
+- after setting themes in nwg-look (ensure you tick all the boxes to select the themes for flatpak too), reboot once.
 ```
-mkdir -p ~/.searxng/config/ ~/.searxng/data/ &&
-cd ~/.searxng/ &&
-docker run --name searxng -d \
-    -p 8888:8080 --restart always \
-    --dns 9.9.9.9 --dns 149.112.112.112 \
-    -v "./config/:/etc/searxng/" \
-    -v "./data/:/var/cache/searxng/" \
-    docker.io/searxng/searxng:latest
+reboot
 ```
-- http://localhost:8888/search?q=%s
+### run flatpaks.sh (in ~/.dotfiles)
+```
+bash flatpaks.sh
+```
 ### Apps left to install
-- [nsxiv](https://codeberg.org/nsxiv/nsxiv)
-- [nwg-look](https://github.com/nwg-piotr/nwg-look)
-    - Dark Theme
-        - qt5ct dark theme & qt6ct dark theme: darker
-        - nwg-look dark theme: Adwaita Dark, prefer dark
-    - after setting themes in nwg-look (ensure you tick all the boxes to select the themes for flatpak too), reboot once.
-    - run flatpaks.sh in the .dotfiles dir
-    ```
-    bash flatpaks.sh
-    ```
-- [chafa](https://github.com/hpjansson/chafa#installing) for jxl support lf previews
 - [Anki](https://apps.ankiweb.net/#downloads), [instructions](https://docs.ankiweb.net/platform/linux/installing.html)
 - [MakeMKV](https://forum.makemkv.com/forum/viewtopic.php?f=3&t=224), [Beta Key](https://forum.makemkv.com/forum/viewtopic.php?t=1053) 
     - Makemkv: View -> Preferences -> set "Minimum title length (seconds)" to 0 seconds
@@ -82,7 +76,7 @@ docker run --name searxng -d \
     Icon=Vial
     ```
 - ~[ddcui](https://github.com/rockowitz/ddcui) ddcutil frontend gui app.~, 
-    - it's a pain since ddcutil versions may mismatch leading to dependency hell. No good alternative yet, apart from using ddcutil from the terminal.
+    - ~it's a pain since ddcutil versions may mismatch leading to dependency hell. No good alternative yet, apart from using ddcutil from the terminal.~
 
 ### Optionally
 - run lpf-spotify-client (already in [bootstrap script](./bootstrap.sh), from rpm fusion) for spotify (flatpak may not work well with sys tray)
@@ -116,6 +110,13 @@ docker run --name searxng -d \
     - [TamperMonkey](https://www.tampermonkey.net/)
 - tweak settings
 - [csTimer](https://github.com/ishaanvatus/cubing), [WhatsApp](https://web.whatsapp.com/)
+- enable jxl support
+- SearXNG as default if not done
+
+### chromium
+- enable jxl support
+- get ublock 
+- SearXNG as default if not done
 
 ### libvirt
 - /etc/libvirt/network.conf: change 

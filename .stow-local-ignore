@@ -2,10 +2,11 @@
 \.gitignore
 bootstrap.sh
 flatpaks.sh
+build.sh
+toolchains.sh
 LICENSE
 lock_image.tar.xz
 Mononoki.tar.xz
 README.md
 Rosario.tar.xz
-toolchains.sh
 wallpapers.tar.xz
