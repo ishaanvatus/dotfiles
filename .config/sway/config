@@ -32,6 +32,7 @@ exec blueman-applet
 exec_always wl-paste --type text --watch cliphist store
 exec_always wl-paste --type image --watch cliphist store
 bindsym $mod+y exec cliphist-fuzzel-img
+bindsym $mod+Alt+e exec fuzzel-emoji
 bindsym $mod+i exec $browser
 exec foot -s
 
