@@ -56,6 +56,7 @@ docker run --name searxng -d \
 - http://localhost:8888/search?q=%s
 ### Apps left to install
 - [nsxiv](https://codeberg.org/nsxiv/nsxiv)
+    - FG: #282828 , BG: #ebdbb2. Font: Mononoki Nerd Font:style=regular:size=17
 - [nwg-look](https://github.com/nwg-piotr/nwg-look)
     - Dark Theme
         - qt5ct dark theme & qt6ct dark theme: darker
