@@ -98,7 +98,7 @@ docker run --name searxng -d \
             - enable EBU R 128 analysis
         - Backend
             - enable bs2b for headphones
-            - audio normalization (leave at -23 LUFS)
+            - audio normalization ([-14 LUFS](https://www.provideocoalition.com/how-many-lufs-for-ideal-audio-loudness-why-cant-we-be-friends/))
             - Fading (go ham)
         - Appearance
             - Background image: Album Cover
