@@ -1,6 +1,6 @@
 #!/bin/sh
 
-flatpak install flathub \
+flatpak install -y flathub \
     com.obsproject.Studio \
     org.gnome.Epiphany \
     org.signal.Signal \
