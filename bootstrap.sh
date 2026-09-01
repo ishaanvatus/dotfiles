@@ -88,7 +88,7 @@ sudo dracut --force
 tar xf ~/.dotfiles/wallpapers.tar.xz -C ~/pictures/
 tar xf ~/.dotfiles/lock_image.tar.xz -C ~/pictures/
 sudo mkdir /usr/share/backgrounds/custom/
-tar xf ~/.dotfiles/sddm_background.tar.xz -C /usr/share/backgrounds/custom/
+sudo tar xf ~/.dotfiles/sddm_background.tar.xz -C /usr/share/backgrounds/custom/
 echo "[General]" | sudo tee /usr/share/sddm/themes/03-sway-fedora/theme.conf
 echo "background=/usr/share/backgrounds/custom/723eb5223b1b46c4b9debe7ad99d7ad8.jxl" | sudo tee -a  /usr/share/sddm/themes/03-sway-fedora/theme.conf
 bash ~/.dotfiles/toolchains.sh
