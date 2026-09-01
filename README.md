@@ -63,7 +63,7 @@ docker run --name searxng -d \
     static const char *WIN_FG[]   = { "Nsxiv.window.foreground",   "#ebdbb2" };
     ```
     ```
-    static const char *BAR_FONT[] = { "Nsxiv.bar.font",            "Mononoki Nerd Font:style=regular:size=17" };
+    static const char *BAR_FONT[] = { "Nsxiv.bar.font",	"Mononoki Nerd Font:style=regular:size=17" };
     ```
     ```
     static const bool TOP_STATUSBAR = true;
