@@ -56,18 +56,18 @@ docker run --name searxng -d \
 - http://localhost:8888/search?q=%s
 ### Apps left to install
 - [nsxiv](https://codeberg.org/nsxiv/nsxiv)
-    - FG
-        ```
-        #282828
-        ```
-    - BG
-        ```
-        #ebdbb2
-        ```
-    - Font
-        ```
-        Mononoki Nerd Font:style=regular:size=17
-        ```
+    ```
+    static const char *WIN_BG[]   = { "Nsxiv.window.background",   "#282828" };
+    ```
+    ```
+    static const char *WIN_FG[]   = { "Nsxiv.window.foreground",   "#ebdbb2" };
+    ```
+    ```
+    static const char *BAR_FONT[] = { "Nsxiv.bar.font",            "Mononoki Nerd Font:style=regular:size=17" };
+    ```
+    ```
+    static const bool TOP_STATUSBAR = true;
+    ```
 - [nwg-look](https://github.com/nwg-piotr/nwg-look)
     - Dark Theme
         - qt5ct dark theme & qt6ct dark theme: darker
