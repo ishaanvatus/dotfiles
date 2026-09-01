@@ -8,8 +8,6 @@ mkdir -p ~/.local/bin ~/.local/src ~/.local/share/applications ~/.local/share/ic
 mkdir -p ~/.config/xfce4
 tar xf ~/.dotfiles/Mononoki.tar.xz -C ~/.local/share/fonts/
 tar xf ~/.dotfiles/Rosario.tar.xz -C ~/.local/share/fonts/
-tar xf ~/.dotfiles/wallpapers.tar.xz -C ~/pictures/
-tar xf ~/.dotfiles/lock_image.tar.xz -C ~/pictures/
 
 sudo dnf config-manager setopt max_parallel_downloads=8 fastestmirror=True
 sudo dnf -y upgrade --refresh
@@ -87,4 +85,10 @@ sudo grubby --update-kernel=ALL --args="rhgb quiet"
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 sudo plymouth-set-default-theme spinfinity
 sudo dracut --force 
+tar xf ~/.dotfiles/wallpapers.tar.xz -C ~/pictures/
+tar xf ~/.dotfiles/lock_image.tar.xz -C ~/pictures/
+sudo mkdir /usr/share/backgrounds/custom/
+tar xf ~/.dotfiles/sddm_background.tar.xz -C /usr/share/backgrounds/custom/
+echo "[General]" | sudo tee /usr/share/sddm/themes/03-sway-fedora/theme.conf
+echo "background=/usr/share/backgrounds/custom/723eb5223b1b46c4b9debe7ad99d7ad8.jxl" | sudo tee -a  /usr/share/sddm/themes/03-sway-fedora/theme.conf
 bash ~/.dotfiles/toolchains.sh
