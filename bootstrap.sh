@@ -13,7 +13,7 @@ sudo dnf config-manager setopt max_parallel_downloads=8 fastestmirror=True
 sudo dnf -y upgrade --refresh
 
 # Laptop stays on when closing lid
-sudo mkdir /etc/systemd/logind.conf.d/
+sudo mkdir -p /etc/systemd/logind.conf.d/
 echo "[Login]" | sudo tee -a  /etc/systemd/logind.conf.d/99-laptop-server.conf
 echo "HandleLidSwitch=ignore" | sudo tee -a  /etc/systemd/logind.conf.d/99-laptop-server.conf
 echo "HandleLidSwitchExternalPower=ignore" | sudo tee -a  /etc/systemd/logind.conf.d/99-laptop-server.conf
@@ -88,8 +88,10 @@ sudo plymouth-set-default-theme spinfinity
 sudo dracut --force 
 tar xf ~/.dotfiles/wallpapers.tar.xz -C ~/pictures/
 tar xf ~/.dotfiles/lock_image.tar.xz -C ~/pictures/
-sudo mkdir /usr/share/backgrounds/custom/
+sudo mkdir -p /usr/share/backgrounds/custom/
 sudo tar xf ~/.dotfiles/sddm_background.tar.xz -C /usr/share/backgrounds/custom/
 echo "[General]" | sudo tee /usr/share/sddm/themes/03-sway-fedora/theme.conf
 echo "background=/usr/share/backgrounds/custom/04fe6233228eb9e67a38a67bfb4a5d2d.jxl" | sudo tee -a  /usr/share/sddm/themes/03-sway-fedora/theme.conf
 bash ~/.dotfiles/toolchains.sh
+sleep 10s
+systemctl reboot
