@@ -13,6 +13,7 @@
     | [SWAP]      |swap| Logical volume : Linux swap                   | RAM size + a bit more ([1.5x RAM, for hibernation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/storage_administration_guide/ch-swapspace#tb-recommended-system-swap-space)) |
     | /           |root| Logical volume : Linux x86-64 root            | Remaining space after swap            |
 
+- Use the en_GB.utf-8 locale (mm/dd/yy makes no sense USA)
 - Under "Software Selection"
     - Under "Base Environment" pick "Fedora Custom Operating System" 
     - Under "Add-Ons for Selected Environment" pick Standard, C Development Tools and Libraries & Development Tools
