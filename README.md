@@ -43,6 +43,13 @@ Defaults:john timestamp_type=global
 # specify the timeout interval (usual default=15)
 Defaults:john timestamp_timeout=5
 ```
+### Librewolf 
+- Extensions
+    - [Vimium](https://vimium.github.io/)
+    - [Dark Reader](https://darkreader.org/) 
+    - [TamperMonkey](https://www.tampermonkey.net/)
+- tweak settings
+- [csTimer](https://github.com/ishaanvatus/cubing), [WhatsApp](https://web.whatsapp.com/)
 ### [searxng docker install](https://docs.searxng.org/admin/installation-docker.html)
 ```
 mkdir -p ~/.searxng/config/ ~/.searxng/data/ &&
@@ -105,30 +112,21 @@ docker run --name searxng -d \
             - Keep running in the background when the the windows is closed 
             - Show the main window
         - Collection
-            - add folder: ~/music
             - Song fingerprinting and tracking
             - enable EBU R 128 analysis
         - Backend
             - enable bs2b for headphones
             - audio normalization ([-14 LUFS](https://www.provideocoalition.com/how-many-lufs-for-ideal-audio-loudness-why-cant-we-be-friends/))
-            - Fading (go ham)
         - Appearance
             - Background image: Album Cover
             - Position: middle
             - Blur 10px
             - Stretch Image to fill, maintain aspect ratio
-    - [let first scan happen, close then reopen and do full collection rescan](https://musicbrainz.org/release/2895c1e0-556d-47d9-a3fa-8c22fbb93607)
+        - Quit and relaunch, and add ~/music to Collection in settings, let it scan the library if you have music already downloaded
 - Thunar
     - enable automounting
 - Azote
-    - set wallpapers for standalone and docked (external display)
-### Librewolf 
-- Extensions
-    - [Vimium](https://vimium.github.io/)
-    - [Dark Reader](https://darkreader.org/) 
-    - [TamperMonkey](https://www.tampermonkey.net/)
-- tweak settings
-- [csTimer](https://github.com/ishaanvatus/cubing), [WhatsApp](https://web.whatsapp.com/)
+    - set wallpapers for standalone and docked (external display, generate two configs and merge them laptop only + docked)
 
 ### libvirt
 - /etc/libvirt/network.conf: change 
@@ -145,3 +143,5 @@ docker run --name searxng -d \
     cd install-tl-2*
     sudo perl ./install-tl --no-interaction
     ```
+
+- Final reboot to ensure libvirt is using the correct backend and you're all set.
