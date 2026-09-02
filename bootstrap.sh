@@ -74,7 +74,8 @@ env CGO_ENABLED=0 go install -ldflags="-s -w" github.com/gokcehan/lf@latest
 xdg-user-dirs-update
 
 systemctl --user enable kanshi.service
-sudo systemctl enable tlp
+sudo systemctl enable tlp.service
+sudo systemctl enable tlp-pd.service
 echo "START_CHARGE_THRESH_BAT0=40" | sudo tee -a /etc/tlp.conf
 echo "STOP_CHARGE_THRESH_BAT0=60" | sudo tee -a /etc/tlp.conf
 sudo systemctl enable docker
