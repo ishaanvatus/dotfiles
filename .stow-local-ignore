@@ -4,6 +4,7 @@ bootstrap.sh
 flatpaks.sh
 build.sh
 toolchains.sh
+pkgs.txt
 LICENSE
 lock_image.tar.xz
 Mononoki.tar.xz
