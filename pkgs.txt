@@ -54,7 +54,7 @@ hplip
 htop
 hugin
 hw-probe
-igt-gpy-tools
+igt-gpu-tools
 ImageMagick
 imlib2-devel
 inkscape
