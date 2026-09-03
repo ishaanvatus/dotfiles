@@ -48,8 +48,9 @@ Defaults:john timestamp_timeout=5
     - [Vimium](https://vimium.github.io/)
     - [Dark Reader](https://darkreader.org/) 
     - [TamperMonkey](https://www.tampermonkey.net/)
-- tweak settings
-- [csTimer](https://github.com/ishaanvatus/cubing), [WhatsApp](https://web.whatsapp.com/)
+- tweak settings (jxl, webgl, default browser etc.)
+- [csTimer](https://github.com/cs0x7f/cstimer)
+- [WhatsApp](https://web.whatsapp.com/), try to use other options like [BitChat](https://github.com/permissionlesstech/bitchat) and [Signal](https://github.com/signalapp). Make sure WhatsApp is installed in it's own dedicated profile on your browser.
 ### [searxng docker install](https://docs.searxng.org/admin/installation-docker.html)
 ```
 mkdir -p ~/.searxng/config/ ~/.searxng/data/ &&
