@@ -85,7 +85,7 @@ sudo systemctl enable sddm
 sudo grubby --update-kernel=ALL --args="rhgb quiet"
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 sudo plymouth-set-default-theme spinfinity
-sudo dracut --force 
+sudo dracut --force --regenerate-all
 tar xf ~/.dotfiles/wallpapers.tar.xz -C ~/pictures/
 tar xf ~/.dotfiles/lock_image.tar.xz -C ~/pictures/
 sudo mkdir -p /usr/share/backgrounds/custom/
