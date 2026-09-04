@@ -91,7 +91,7 @@ tar xf ~/.dotfiles/lock_image.tar.xz -C ~/pictures/
 sudo mkdir -p /usr/share/backgrounds/custom/
 sudo tar xf ~/.dotfiles/sddm_background.tar.xz -C /usr/share/backgrounds/custom/
 echo "[General]" | sudo tee /usr/share/sddm/themes/03-sway-fedora/theme.conf
-echo "background=/usr/share/backgrounds/custom/04fe6233228eb9e67a38a67bfb4a5d2d.jxl" | sudo tee -a  /usr/share/sddm/themes/03-sway-fedora/theme.conf
+echo "background=/usr/share/backgrounds/custom/afa8c63dfad80588cb6daddb1b4495d9.jxl" | sudo tee -a  /usr/share/sddm/themes/03-sway-fedora/theme.conf
 bash ~/.dotfiles/toolchains.sh
 sleep 10s
 systemctl reboot
