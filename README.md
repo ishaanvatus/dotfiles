@@ -77,6 +77,7 @@ docker run --name searxng -d \
     ```
     static const bool TOP_STATUSBAR = true;
     ```
+    - use make install-all so that the file manager(thunar) can use it to open images.
 - [nwg-look](https://github.com/nwg-piotr/nwg-look)
     - Dark Theme
         - qt5ct dark theme & qt6ct dark theme: darker
