@@ -4,7 +4,6 @@ adwaita-icon-theme
 android-tools
 ardour9
 aria2
-azote
 blender
 blueman
 btop

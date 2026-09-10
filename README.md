@@ -127,8 +127,6 @@ docker run --name searxng -d \
         - Quit and relaunch, and add ~/music to Collection in settings, let it scan the library if you have music already downloaded
 - Thunar
     - enable automounting
-- Azote
-    - set wallpapers for standalone and docked (external display, generate two configs and merge them laptop only + docked)
 
 ### libvirt
 - /etc/libvirt/network.conf: change 
