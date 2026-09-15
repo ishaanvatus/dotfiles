@@ -125,8 +125,6 @@ docker run --name searxng -d \
             - Blur 10px
             - Stretch Image to fill, maintain aspect ratio
         - Quit and relaunch, and add ~/music to Collection in settings, let it scan the library if you have music already downloaded
-- Thunar
-    - enable automounting
 
 ### libvirt
 - /etc/libvirt/network.conf: change 
