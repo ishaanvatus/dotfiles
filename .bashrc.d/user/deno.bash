@@ -12,105 +12,155 @@ _deno() {
             ",${COMP_WORDS[0]}")
                 cmd="deno"
                 ;;
-            "deno,run")\n                cmd="deno__run"
+            "deno,run")
+                cmd="deno__run"
                 ;;
-            "deno,watch")\n                cmd="deno__watch"
+            "deno,watch")
+                cmd="deno__watch"
                 ;;
-            "deno,serve")\n                cmd="deno__serve"
+            "deno,serve")
+                cmd="deno__serve"
                 ;;
-            "deno,eval")\n                cmd="deno__eval"
+            "deno,eval")
+                cmd="deno__eval"
                 ;;
-            "deno,fmt")\n                cmd="deno__fmt"
+            "deno,fmt")
+                cmd="deno__fmt"
                 ;;
-            "deno,lint")\n                cmd="deno__lint"
+            "deno,lint")
+                cmd="deno__lint"
                 ;;
-            "deno,test")\n                cmd="deno__test"
+            "deno,test")
+                cmd="deno__test"
                 ;;
-            "deno,upgrade")\n                cmd="deno__upgrade"
+            "deno,upgrade")
+                cmd="deno__upgrade"
                 ;;
-            "deno,cache")\n                cmd="deno__cache"
+            "deno,cache")
+                cmd="deno__cache"
                 ;;
-            "deno,check")\n                cmd="deno__check"
+            "deno,check")
+                cmd="deno__check"
                 ;;
-            "deno,info")\n                cmd="deno__info"
+            "deno,info")
+                cmd="deno__info"
                 ;;
-            "deno,doc")\n                cmd="deno__doc"
+            "deno,doc")
+                cmd="deno__doc"
                 ;;
-            "deno,task")\n                cmd="deno__task"
+            "deno,task")
+                cmd="deno__task"
                 ;;
-            "deno,bench")\n                cmd="deno__bench"
+            "deno,bench")
+                cmd="deno__bench"
                 ;;
-            "deno,compile")\n                cmd="deno__compile"
+            "deno,compile")
+                cmd="deno__compile"
                 ;;
-            "deno,coverage")\n                cmd="deno__coverage"
+            "deno,coverage")
+                cmd="deno__coverage"
                 ;;
-            "deno,repl")\n                cmd="deno__repl"
+            "deno,repl")
+                cmd="deno__repl"
                 ;;
-            "deno,install")\n                cmd="deno__install"
+            "deno,install")
+                cmd="deno__install"
                 ;;
-            "deno,uninstall")\n                cmd="deno__uninstall"
+            "deno,uninstall")
+                cmd="deno__uninstall"
                 ;;
-            "deno,types")\n                cmd="deno__types"
+            "deno,types")
+                cmd="deno__types"
                 ;;
-            "deno,completions")\n                cmd="deno__completions"
+            "deno,completions")
+                cmd="deno__completions"
                 ;;
-            "deno,init")\n                cmd="deno__init"
+            "deno,init")
+                cmd="deno__init"
                 ;;
-            "deno,create")\n                cmd="deno__create"
+            "deno,create")
+                cmd="deno__create"
                 ;;
-            "deno,jupyter")\n                cmd="deno__jupyter"
+            "deno,jupyter")
+                cmd="deno__jupyter"
                 ;;
-            "deno,publish")\n                cmd="deno__publish"
+            "deno,publish")
+                cmd="deno__publish"
                 ;;
-            "deno,add")\n                cmd="deno__add"
+            "deno,add")
+                cmd="deno__add"
                 ;;
-            "deno,remove")\n                cmd="deno__remove"
+            "deno,remove")
+                cmd="deno__remove"
                 ;;
-            "deno,outdated")\n                cmd="deno__outdated"
+            "deno,outdated")
+                cmd="deno__outdated"
                 ;;
-            "deno,update")\n                cmd="deno__update"
+            "deno,update")
+                cmd="deno__update"
                 ;;
-            "deno,deploy")\n                cmd="deno__deploy"
+            "deno,deploy")
+                cmd="deno__deploy"
                 ;;
-            "deno,sandbox")\n                cmd="deno__sandbox"
+            "deno,sandbox")
+                cmd="deno__sandbox"
                 ;;
-            "deno,clean")\n                cmd="deno__clean"
+            "deno,clean")
+                cmd="deno__clean"
                 ;;
-            "deno,list")\n                cmd="deno__list"
+            "deno,list")
+                cmd="deno__list"
                 ;;
-            "deno,link")\n                cmd="deno__link"
+            "deno,link")
+                cmd="deno__link"
                 ;;
-            "deno,unlink")\n                cmd="deno__unlink"
+            "deno,unlink")
+                cmd="deno__unlink"
                 ;;
-            "deno,approve-scripts")\n                cmd="deno__approve__scripts"
+            "deno,approve-scripts")
+                cmd="deno__approve__scripts"
                 ;;
-            "deno,lsp")\n                cmd="deno__lsp"
+            "deno,lsp")
+                cmd="deno__lsp"
                 ;;
-            "deno,vendor")\n                cmd="deno__vendor"
+            "deno,vendor")
+                cmd="deno__vendor"
                 ;;
-            "deno,bundle")\n                cmd="deno__bundle"
+            "deno,bundle")
+                cmd="deno__bundle"
                 ;;
-            "deno,audit")\n                cmd="deno__audit"
+            "deno,audit")
+                cmd="deno__audit"
                 ;;
-            "deno,why")\n                cmd="deno__why"
+            "deno,why")
+                cmd="deno__why"
                 ;;
-            "deno,transpile")\n                cmd="deno__transpile"
+            "deno,transpile")
+                cmd="deno__transpile"
                 ;;
-            "deno,bump-version")\n                cmd="deno__bump__version"
+            "deno,bump-version")
+                cmd="deno__bump__version"
                 ;;
-            "deno,ci")\n                cmd="deno__ci"
+            "deno,ci")
+                cmd="deno__ci"
                 ;;
-            "deno,desktop")\n                cmd="deno__desktop"
+            "deno,desktop")
+                cmd="deno__desktop"
                 ;;
-            "deno,pack")\n                cmd="deno__pack"
+            "deno,pack")
+                cmd="deno__pack"
                 ;;
-            "deno,x")\n                cmd="deno__x"
+            "deno,x")
+                cmd="deno__x"
                 ;;
-            "deno,json_reference")\n                cmd="deno__json_reference"
+            "deno,json_reference")
+                cmd="deno__json_reference"
                 ;;
-            "deno,help")\n                cmd="deno__help"
+            "deno,help")
+                cmd="deno__help"
                 ;;
-            *)\n                ;;
+            *)
+                ;;
         esac
     done
 
