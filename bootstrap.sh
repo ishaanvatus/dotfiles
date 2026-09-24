@@ -39,8 +39,7 @@ sudo dnf -y config-manager setopt fedora-cisco-openh264.enabled=1
 sudo dnf -y update @core
 sudo dnf -y install rpmfusion-\*-appstream-data
 sudo dnf -y swap ffmpeg-free ffmpeg --allowerasing
-# version lag for libheif-freeworld
-sudo dnf -y install @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin,libheif-freeworld
+sudo dnf -y install @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 sudo dnf -y install intel-media-driver 
 
 # packages

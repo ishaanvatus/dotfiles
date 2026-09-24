@@ -9,7 +9,7 @@
 # Your preferred terminal emulator
 # set $term foot
 # https://wiki.gentoo.org/wiki/Foot#Server_mode_configuration
-set $term footclient
+set $term foot
 set $browser librewolf
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
@@ -34,7 +34,7 @@ exec_always wl-paste --type image --watch cliphist store
 bindsym $mod+y exec cliphist-fuzzel-img
 bindsym $mod+Alt+e exec fuzzel-emoji
 bindsym $mod+i exec $browser
-exec foot -s
+#exec foot -s
 
 exec_always ~/.azotebg
 font pango:MononokiNerdFont Medium 17
