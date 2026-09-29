@@ -139,6 +139,8 @@ stow
 strawberry
 sway
 swaylock
+SwayNotificationCenter
+SwayNotificationCenter-bash-completion
 terminus-fonts-console
 thunar
 thunar-archive-plugin

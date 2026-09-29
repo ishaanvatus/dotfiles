@@ -26,8 +26,13 @@ set $right l
 exec systemctl --user start sway-session.target 
 # Polkit
 exec /usr/libexec/polkit-mate-authentication-agent-1
+
+# Notification Daemon
+exec swaync
+# Toggle control center
+bindsym $mod+Shift+n exec swaync-client -t -sw
+
 exec thunar --daemon
-exec /usr/libexec/gvfs-udisks2-volume-monitor
 exec nm-applet --indicator
 exec blueman-applet
 exec_always wl-paste --type text --watch cliphist store
@@ -36,7 +41,6 @@ bindsym $mod+y exec cliphist-fuzzel-img
 bindsym $mod+Alt+e exec fuzzel-emoji
 bindsym $mod+i exec $browser
 
-exec_always ~/.azotebg
 font pango:MononokiNerdFont Medium 17
 smart_gaps on
 gaps inner 8
@@ -120,10 +124,10 @@ output * bg $(find -L $wallpapers_path -type f | shuf -n 1 ) fill
     bindsym $mod+g exec grimpicker --copy
 
     set $psf $(xdg-user-dir PICTURES)/screenshots/ps_$(date +"%Y%m%d-%H%M%S").png
-    bindsym $ps1 exec grim - | wl-copy 
-    bindsym $ps2 exec grim -g "$(slurp)" - | wl-copy
-    bindsym $ps3 exec grim $psf
-    bindsym $ps4 exec grim -g "$(slurp)" $psf
+    bindsym $ps1 exec grim - | wl-copy && notify-send "Full screen copied to clipboard"
+    bindsym $ps2 exec grim -g "$(slurp)" - | wl-copy && notify-send "Selection copied to clipboard"
+    bindsym $ps3 exec grim $psf && notfiy-send "Full screen saved to ~/pictures/screenshots/"
+    bindsym $ps4 exec grim -g "$(slurp)" $psf  "Selection saved to ~/pictures/screenshots/"
     # Switch to workspace
     bindsym $mod+1 workspace number 1
     bindsym $mod+2 workspace number 2
@@ -266,7 +270,7 @@ bar {
     position top
     modifier $mod
 }
-bindsym $mod+n bar mode toggle
+bindsym $mod+n exec pkill -SIGUSR1 waybar
 
 set $opacity 1.0
 for_window [class=".*"] opacity $opacity
