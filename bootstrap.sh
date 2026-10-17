@@ -8,7 +8,7 @@ mkdir -p ~/.local/bin ~/.local/src ~/.local/share/applications ~/.local/share/ic
 mkdir -p ~/.config/xfce4
 
 curl -fsSL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Mononoki.zip -o /tmp/Mononoki.zip
-unzip -q x /tmp/Mononoki.zip -d ~/.local/share/fonts/
+unzip -q /tmp/Mononoki.zip -d ~/.local/share/fonts/
 
 sudo dnf config-manager setopt max_parallel_downloads=8 fastestmirror=True
 sudo dnf -y upgrade --refresh
@@ -91,7 +91,6 @@ sudo plymouth-set-default-theme spinfinity
 sudo dracut --force --regenerate-all
 magick -size 1920x1080 xc:black $HOME/pictures/wallpapers/black.jxl
 mv ~/.dotfiles/lock_image.jxl ~/pictures/
-sudo mkdir -p /usr/share/backgrounds/custom/
 bash ~/.dotfiles/toolchains.sh
 sleep 10s
 systemctl reboot
