@@ -3,12 +3,12 @@ set -eo pipefail
 
 PKGS=$(cat ~/.dotfiles/pkgs.txt)
 
-mkdir -p ~/desktop ~/documents ~/downloads ~/music ~/pictures/screenshots/mpv ~/public ~/templates ~/videos/recordings ~/src ~/.themes
+mkdir -p ~/desktop ~/documents ~/downloads ~/music ~/pictures/wallpapers ~/pictures/screenshots/mpv ~/public ~/templates ~/videos/recordings ~/src ~/.themes
 mkdir -p ~/.local/bin ~/.local/src ~/.local/share/applications ~/.local/share/icons  ~/.local/share/fonts
 mkdir -p ~/.config/xfce4
 
 curl -fsSL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Mononoki.zip -o /tmp/Mononoki.zip
-unzip -q x /tmp/Mononoki.zip -o ~/.local/share/fonts/
+unzip -q x /tmp/Mononoki.zip -d ~/.local/share/fonts/
 
 sudo dnf config-manager setopt max_parallel_downloads=8 fastestmirror=True
 sudo dnf -y upgrade --refresh
