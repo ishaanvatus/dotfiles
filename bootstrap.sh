@@ -89,7 +89,8 @@ sudo grubby --update-kernel=ALL --args="rhgb quiet"
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 sudo plymouth-set-default-theme spinfinity
 sudo dracut --force --regenerate-all
-mv ~/.dotfiles/lock_image.jxl -C ~/pictures/
+magick -size 1920x1080 xc:black $HOME/pictures/wallpapers/black.jxl
+mv ~/.dotfiles/lock_image.jxl ~/pictures/
 sudo mkdir -p /usr/share/backgrounds/custom/
 bash ~/.dotfiles/toolchains.sh
 sleep 10s
