@@ -90,7 +90,7 @@ sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 sudo plymouth-set-default-theme spinfinity
 sudo dracut --force --regenerate-all
 magick -size 1920x1080 xc:black $HOME/pictures/wallpapers/black.jxl
-mv ~/.dotfiles/lock_image.jxl ~/pictures/
+magick -size 1920x1080 xc:MediumTurquoise $HOME/pictures/lock_image.jxl
 bash ~/.dotfiles/toolchains.sh
 sleep 10s
 systemctl reboot
