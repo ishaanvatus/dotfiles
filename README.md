@@ -63,6 +63,8 @@ docker run --name searxng -d \
     docker.io/searxng/searxng:latest
 ```
 - http://localhost:8888/search?q=%s
+### mpv Fonts
+- [Rosario Bold](https://fonts.google.com/specimen/Rosario)
 ### Apps left to install
 - [nsxiv](https://codeberg.org/nsxiv/nsxiv)
     ```
