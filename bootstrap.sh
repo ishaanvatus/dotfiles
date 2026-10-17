@@ -6,8 +6,9 @@ PKGS=$(cat ~/.dotfiles/pkgs.txt)
 mkdir -p ~/desktop ~/documents ~/downloads ~/music ~/pictures/screenshots/mpv ~/public ~/templates ~/videos/recordings ~/src ~/.themes
 mkdir -p ~/.local/bin ~/.local/src ~/.local/share/applications ~/.local/share/icons  ~/.local/share/fonts
 mkdir -p ~/.config/xfce4
-tar xf ~/.dotfiles/Mononoki.tar.xz -C ~/.local/share/fonts/
-tar xf ~/.dotfiles/Rosario.tar.xz -C ~/.local/share/fonts/
+
+curl -fsSL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Mononoki.zip -o /tmp/Mononoki.zip
+unzip -q x /tmp/Mononoki.zip -o ~/.local/share/fonts/
 
 sudo dnf config-manager setopt max_parallel_downloads=8 fastestmirror=True
 sudo dnf -y upgrade --refresh
@@ -88,12 +89,8 @@ sudo grubby --update-kernel=ALL --args="rhgb quiet"
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 sudo plymouth-set-default-theme spinfinity
 sudo dracut --force --regenerate-all
-tar xf ~/.dotfiles/wallpapers.tar.xz -C ~/pictures/
-tar xf ~/.dotfiles/lock_image.tar.xz -C ~/pictures/
+mv ~/.dotfiles/lock_image.jxl -C ~/pictures/
 sudo mkdir -p /usr/share/backgrounds/custom/
-sudo tar xf ~/.dotfiles/sddm_background.tar.xz -C /usr/share/backgrounds/custom/
-echo "[General]" | sudo tee /usr/share/sddm/themes/03-sway-fedora/theme.conf
-echo "background=/usr/share/backgrounds/custom/6b5d52418bd685962d621f16f8beca59.jxl" | sudo tee -a  /usr/share/sddm/themes/03-sway-fedora/theme.conf
 bash ~/.dotfiles/toolchains.sh
 sleep 10s
 systemctl reboot
