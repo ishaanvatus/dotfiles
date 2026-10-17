@@ -106,7 +106,6 @@ ninja-build
 nmap
 nvim
 opus-tools
-oxygen-cursor-themes
 pamixer
 pandoc
 parallel
