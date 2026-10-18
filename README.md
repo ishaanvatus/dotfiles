@@ -50,7 +50,11 @@ Defaults:john timestamp_timeout=5
     - [TamperMonkey](https://www.tampermonkey.net/)
 - tweak settings (jxl, webgl, default browser etc.)
 - [csTimer](https://github.com/cs0x7f/cstimer)
+
+### Ungoogled Chromium 
+- Use neverdecaf's chrome webstore extension
 - [WhatsApp](https://web.whatsapp.com/), try to use other options like [BitChat](https://github.com/permissionlesstech/bitchat) and [Signal](https://github.com/signalapp). Make sure WhatsApp is installed in it's own dedicated profile on your browser.
+
 ### [searxng docker install](https://docs.searxng.org/admin/installation-docker.html)
 ```
 mkdir -p ~/.searxng/config/ ~/.searxng/data/ &&
@@ -145,3 +149,4 @@ docker run --name searxng -d \
     ```
 
 - Final reboot to ensure libvirt is using the correct backend and you're all set.
+
