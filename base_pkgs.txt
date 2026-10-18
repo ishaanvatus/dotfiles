@@ -47,6 +47,8 @@ pamixer
 pavucontrol
 playerctl
 plymouth-theme-spinfinity
+qt5ct
+qt6ct
 sddm-wayland-sway
 slurp
 stow
@@ -67,4 +69,3 @@ xsane
 zathura
 zathura-cb
 zathura-pdf-mupdf
-
