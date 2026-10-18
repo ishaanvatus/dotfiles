@@ -13,3 +13,4 @@ flatpak install -y flathub \
     org.libreoffice.LibreOffice \
     org.qbittorrent.qBittorrent \
     com.github.johnfactotum.Foliate \
+    io.github.ungoogled_software.ungoogled_chromium

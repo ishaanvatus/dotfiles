@@ -5,7 +5,6 @@ blender
 btop
 cage
 calibre
-chromium
 easytag
 expat-devel
 faketime
