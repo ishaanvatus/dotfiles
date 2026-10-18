@@ -1,7 +1,7 @@
 #!/bin/bash
 set -eo pipefail
 
-PKGS=$(cat ~/.dotfiles/base_pkgs.txt)
+PKGS=$(cat ~/.dotfiles/pkgs.txt)
 
 mkdir -p ~/desktop ~/documents ~/downloads ~/music ~/pictures/wallpapers ~/pictures/screenshots/mpv ~/public ~/templates ~/videos/recordings ~/src ~/.themes
 mkdir -p ~/.local/bin ~/.local/src ~/.local/share/applications ~/.local/share/icons  ~/.local/share/fonts
