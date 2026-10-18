@@ -8,12 +8,10 @@ default-fonts-cjk
 ffmpegthumbnailer
 file-roller
 flatpak
-foot
 fuse
 fuse-libs
 fuzzel
 gammastep
-gawk
 golang
 google-noto-color-emoji-fonts
 google-noto-emoji-fonts
@@ -31,7 +29,6 @@ ImageMagick
 imlib2-devel
 inxi
 iwlwifi-mvm-firmware
-jq
 kanshi
 keepassxc
 libexif-devel
@@ -70,7 +67,6 @@ unrar
 vlc
 waybar
 wl-clipboard
-wtype
 xdg-user-dirs
 xsane
 zathura
