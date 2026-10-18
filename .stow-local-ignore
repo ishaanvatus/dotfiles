@@ -10,4 +10,4 @@ bootstrap.sh
 flatpaks.sh
 toolchains.sh
 
-*.txt
+\.txt
