@@ -31,10 +31,6 @@ bash bootstrap.sh
     - rustup custom installation don't add to path, default profile, stable
     - deno don't add to path or add bash completions
     - if nvm appends some lines the last bit of .bashrc, remove them
-### install additional packages
-```
-sudo dnf -y install $(cat ~/.dotfiles/additional_pkgs.txt)
-```
 ### /etc/sudoers (replace "john" with your username)
 one can do something like
 ```
