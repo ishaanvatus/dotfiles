@@ -1,3 +1,6 @@
+> # Migrated to [Codeberg](https://codeberg.org/)
+>
+> These dotfiles are now [updated and hosted on Codeberg](https://codeberg.org/ishaanvatus/dotfiles/)
 # How to use this repo
 - FIRSTLY: FREE FREE TO REPORT ANY ISSUES, I'LL GET AROUND TO IT IF I CAN REPLICATE IT.
     - ISSUES are not limited to bugs and can include bad/inefficient choices regarding how the bootstrap operates

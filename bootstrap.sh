@@ -89,8 +89,8 @@ sudo grubby --update-kernel=ALL --args="rhgb quiet"
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 sudo plymouth-set-default-theme spinfinity
 sudo dracut --force --regenerate-all
-magick -size 1920x1080 xc:black $HOME/pictures/wallpapers/black.jxl
-magick -size 1920x1080 xc:MediumTurquoise $HOME/pictures/lock_image.jxl
+magick -size 1920x1080 xc:ForestGreen $HOME/pictures/wallpapers/ForestGreen.jxl
+magick -size 1920x1080 xc:gray $HOME/pictures/lock_image.jxl
 bash ~/.dotfiles/toolchains.sh
 sleep 10s
 systemctl reboot
