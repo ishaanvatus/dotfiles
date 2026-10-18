@@ -43,12 +43,14 @@ network-manager-applet
 NetworkManager-tui
 NetworkManager-wifi
 nvim
+opus-tools
 pamixer
 pavucontrol
 playerctl
 plymouth-theme-spinfinity
 qt5ct
 qt6ct
+rawtherapee
 sddm-wayland-sway
 slurp
 stow
@@ -62,6 +64,7 @@ thunar-archive-plugin
 thunar-volman
 tlp
 unrar
+vlc
 waybar
 wl-clipboard
 xdg-user-dirs
